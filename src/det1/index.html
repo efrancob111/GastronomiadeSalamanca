@@ -5,7 +5,7 @@
   <title>detalle-recetaHornazo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Receta tradicional de hornazo salmantino con masa de pan y embutidos.">
-     <link rel="stylesheet" href="../assets/css/style.css" />
+     <link rel="stylesheet" href="../assets/css/style.css" >
      <link rel="icon" href="../assets/imagenes/favicon.PNG" type="image/png" >
     <script type="module" src="app.js"></script>
 </head>
@@ -33,22 +33,22 @@
 
 <main class="container">
       <section class="detalle-recetaHornazo">
-  <a href="../categoria/ProductosTipicos.html"> <h1>HORNAZO</h1></a>
+  <h1><a href="../categoria/ProductosTipicos.html">HORNAZO</a></h1> 
    
     <p> Preparación: <time datetime="PT20M">20 min</time> ·
         Reposo: <time datetime="PT60M">60 min</time> ·
         Horneado: <time datetime="PT40M">40 min</time> ·
         Total: <time datetime="PT2H">2 h</time>
       </p>
-    </header>
+ 
 
     <figure>
    <a href="../categoria/ProductosTipicos.html"> <img src="../assets/imagenes/hornazo.PNG" alt="Hornazo"></a> 
       <figcaption>Hornazo tradicional con masa de pan y embutidos.</figcaption>
     </figure>
-
+</section>
     <section class="ingredientes">
-      <h2 id="ingredientes">Ingredientes</h2>
+      <h2>Ingredientes</h2>
 
       <h3>Para la masa</h3>
       <ul>
@@ -87,24 +87,34 @@
         <li>Puedes aromatizar la masa con anís en grano o pimentón.</li>
       </ul>
 
+</section>
 
-             <iframe
+
+       <!-- Vídeo de YouTube incrustado -->
+    <section class="video">
+      <h2>Vídeo receta de Hornazo</h2>
+      <div class="video-wrapper">
+        <!-- Sustituye el ID del vídeo por el que prefieras -->
+        <iframe
           src="https://www.google.com/search?q=video+elaboracion+hornazo&oq=video+elaboracion+hornazo&gs_lcrp=EgZjaHJvbWUyBggAEEUYOdIBCTYzNTJqMGoxNagCCLACAQ&sourceid=chrome&ie=UTF-8#fpstate=ive&vld=cid:c5ba6576,vid:hISK-zGEOU8,st:0"
           title="detalle-recetaHornazo"
           loading="lazy"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          referrer></iframe>
-    </section>
+        
+         allowfullscreen referrerpolicy="origin-when-cross-origin"></iframe>
 
-   
-   
-</article>
+          </div>
+      </section>
+
 </main>
 
-<footer>
-  <div class="container">
-       <p>UOC Estrella Franco Blanco</p>
+<footer class="site-footer">
+<div class="footer-inner">
+
+<p>UOC Estrella Franco Blanco</p>
   </div>
 </footer>
 </body>
 </html>
+
+
