@@ -5,7 +5,7 @@
   <title>Gastronomia de Salamanca</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Elaboración de producto farinato de Ciudad Rodriggo ">
- <link rel="stylesheet" href="../assets/css/style.css" />
+ <link rel="stylesheet" href="../assets/css/style.css">
      <link rel="icon" href="assets/imagenes/favicon.PNG" type="image/png" >
     <script type="module" src="app.js"></script>
 </head>
@@ -17,32 +17,34 @@
     <ul>
 
        <li>
-         <a href="../index.html"><img src="../assets/imagenes/favicon.PNG" alt="bandera de Salamanca">INICIO</a>
+         <a href="../index.html"><img src="../assets/imagenes/favicon.PNG" alt="banderaSalamanca">INICIO</a>
   
        <li><a href="../categoria/ProductosTipicos.html">CATEGORIA</a></li>
       <li><a href="../categoria2/PlatosTipicos.html">CATEGORIA2</a></li>
        <li><a href="../BaresyRestaurantes.html"> BARES Y RESTAURANTES</a></li>
    
-         <li><a href="../det2/index.html"> DETALLE-PRODUCTO FARINATO</a></li>
+         <li><a href="../det2/index.html"> DETALLE-PRODUCTO-ARINATO</a></li>
     
     </ul>
   </nav>
   </header>
 
-<main class="container">
-      <section class="productos-grid">
+<main >
+  <div class="container">
+      <section class="productosFarinato-grid">
    
 
-    <article class="producto">
+    <article class="productoFarinato">
 
-<main class="detail">
+
     <!-- Imagen -->
-    <figure class="farinato">
-     <a href="../categoria/ProductosTipicos.html"> <img src="../assets/imagenes/FarinatoCiudadRodrigo.PNG" alt="Farinato tradicional de Ciudad Rodrigo, presentado en tabla de madera" ></figure></a>
+    <figure>
+     <a href="../categoria/ProductosTipicos.html"> <img src="../assets/imagenes/FarinatoCiudadRodrigo.PNG" alt="Farinato tradicional de Ciudad Rodrigo, presentado en tabla de madera" ></a></figure>
+     
 
     <!-- Definición-->
     <section class="farinato">
-      <a href="../categoria/ProductosTipicos.html"><h1>Farinato</h1></a>
+    <h1><a href="../categoria/ProductosTipicos.html">Farinato</a></h1>  
       <h2 >Qué es y por qué es especial</h2>
       <p>El farinato  es un embutido típico de  Ciudad Rodrigo (Salamanca). Aunque su apariencia recuerda a un chorizo, su base no es cárnica, sino una mezcla de <em>migas de pan</em> y <em>manteca</em>, enriquecida con <strong>pimentón</strong> y otras especias que le dan un aroma y sabor muy característicos.</p>
       <p>Su textura firme y su perfil especiado lo hacen ideal para tomar a la plancha o salteado, a menudo acompañado de <strong>huevo frito</strong> o patatas. Es un producto humilde y tradicional, muy ligado a la cocina de aprovechamiento.</p>
@@ -50,7 +52,7 @@
     </section>
 
     <!-- Elaboración / Receta -->
-    <section clas="receta">
+    <section class="receta">
       <h2 >Receta</h2>
       <h3>Ingredientes:</h3>
       <ul>
@@ -76,13 +78,10 @@
     <section class="imagenes">
       <h2>Galería</h2>
       <div class="galeria">
+    <figure><a href="../categoria/ProductosTipicos.html"><img src="../assets/imagenes/MigasPanFarinato.PNG" alt="Migas de pan y especias"></a></figure>   
+    <figure><a href="../categoria/ProductosTipicos.html"><img src="../assets/imagenes/masaFarinatomezclamanteca.PNG" alt="Masa de farinato tras mezclar con manteca" ></a></figure>
         <figure>
-          <img src="../assets/img/farinato-migas.jpg" alt="Migas de pan cona: migas y especias."></figcaption>
-        </figure>
-        <figure>
-          <img src="../assets/img/farinato-masa.jpg" alt="Masa de farinato tras mezclar con manteca" ></figure>
-        <figure>
-          <img src="../assets/img/farinato-plancha.jpg" alt="Rodajas de farinato dorándose en la sartén" ></figure>
+          <a href="../categoria/ProductosTipicos.html"><img src="../assets/imagenes/rodajasDeFarinatoalaSarten.PNG" alt="Rodajas de farinato dorándose en la sartén" ></a></figure>
       </div>
     </section>
 
@@ -93,26 +92,30 @@
       <p><span>Desmenuzado:</span> sin tripa, saltéalo y remueve hasta que quede suelto y dorado; ideal con huevo o patata.</p>
     </section>
 
-    <!-- Vídeo de YouTube incrustado -->
-    <section class="video">
+    <!-- Vídeo de YouTube  -->
+    <section Class="videoElaboracionFarinato">
       <h2>Vídeo de elaboración del Farinato</h2>
       <div class="video-wrapper">
-        <!-- Sustituye el ID del vídeo por el que prefieras -->
+  
         <iframe
           src="https://www.youtube.com/embed/ysz5S6PUM-U"
           title="Elaboración del farinato — vídeo ilustrativo"
           loading="lazy"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          referrer></iframe>
-          </div>
-
-      </section>
-
+           allowfullscreen referrerpolicy="origin-when-cross-origin"></iframe>
+</div>
 </article>
-<footer>
-  <div class="container">
-       <p>UOC Estrella Franco Blanco</p>
-  </div>
+
+</section>
+
+  </div>   
+</main>          
+
+
+<footer class="site-footer">
+<div class="footer-inner">
+<p>UOC Estrella Franco Blanco</p>
+ </div>
 </footer>
 </body>
 </html>
