@@ -6,7 +6,7 @@
   <title>Gastronomia de Salamanca</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="portada de Gastronomia de Salamanca con enlaces a categoria-productos típicos, platos típicos,recetas">
-     <link rel="stylesheet" href="../src/assets/css/style.css" />
+     <link rel="stylesheet" href="../src/assets/css/style.css">
      <link rel="icon" href="../src/assets/imagenes/favicon.PNG" type="image/png" >
     <script type="module" src="app.js"></script>
 </head>
@@ -21,8 +21,9 @@
          <a href="../src/index.html"><img src="assets/imagenes/favicon.PNG" alt="paisajeSalamanca">INICIO</a>
   
         <li><a href="../src/categoria/ProductosTipicos.html">CATEGORIA</a></li>
-      <li><a href="../src/PlatosTipicos.html">CATEGORIA2</a></li>
+      <li><a href="../src/categoria2/PlatosTipicos.html">CATEGORIA2</a></li>
        <li><a href="../src/BaresyRestaurantes.html"> BARES Y RESTAURANTES</a></li>
+         <li><a href="../src/links.html"> DOCUMENTACION Y ENLACES</a></li>
        
     </ul>
   </nav>
@@ -30,34 +31,38 @@
 
 <main class="container">
   <section class="container-index">
-    <div>
-      <a href="../src/categoria/ProductosTipicos.html"><h1>Gastronomía de Salamanca </h1></a>
+    <div class="GastronomiaSalamanca">
+      <h1><a href="../src/categoria/ProductosTipicos.html">Gastronomía de Salamanca</a></h1>
       <p>Ciudad española, capital de la provincia homónima, situada en la comunidad autónoma de Castilla y León. Está ubicada en la comarca del Campo de Salamanca, en plena meseta Norte, en el cuadrante noroeste de la península ibérica. </p>
       <p>En este portal aportaremos para conocer un poco más de Salamanca su Gastronomia, ProductosTipicos, platos típicos, y restaurantes, bares de la Ciudad</p>
 
-      <img src="assets/imagenes/paisajeSalamanca.PNG" alt="paisaje Salamanca">
+        <a href="../src/BaresyRestaurantes.html"><img src="assets/imagenes/paisajeSalamanca.PNG" alt="paisaje Salamanca"></a>
 
     </div>
 
   </section>
 
-  <section>
+  <section class="Productostipicos">
     
     <div class="Productostipicos">
-      <a href="../src/categoria/ProductosTipicos.html"><h2>Destacamos Productos típicos</h2></a>
+   <h2> <a href="../src/categoria/ProductosTipicos.html">Destacamos Productos típicos</a></h2>  
       <p>
       En Categoria se hace una presentación y listado de productos  típicos de Salamanca y 
       en está página se puede ver al detalle algunos de ellos, con la receta con la receta correspondiente.
      </p>
+    </div>
+    </section>
+      <section class="PlatosTipicos">
       <div class="PlatosTipicos">
-    <a href="../src/categoria2/PlatosTipicos.html"><h3>Platos tipicos</h3></a> 
+  <h3><a href="../src/categoria2/PlatosTipicos.html">Platos tipicos</a> </h3>  
           <p>En Categoria2 se hace una presentación y listado de platos típicos de Salamanca y 
       en está página se puede ver al detalle algunos de ellos, con la receta correspondiente </p>
        
      </div>
-    
+    </section>
+     <section class="BaresyRestaurantes">
        <div class="BaresyRestaurantes">
-     <a href="../src/BaresyRestaurantes.html"><h3>Bares y Restaurantes</h3></a>
+     <h4><a href="../src/BaresyRestaurantes.html">Bares y Restaurantes</a></h4>
           <p>Guía de bares, restaurantes y cafés más destacados de la ciudad </p>
        
      </div>
@@ -65,11 +70,11 @@
       
   </section>
 </main>
+ 
+<footer class="site-footer">
+<div class="footer-inner">
 
-<footer>
-  <div class="container">
-    <p>UOC Estrella Franco Blanco</p>
-   
+       <p>UOC Estrella Franco Blanco</p>
   </div>
 </footer>
 </body>
