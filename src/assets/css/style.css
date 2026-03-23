@@ -1,22 +1,42 @@
-/* Reset básico */
+/* ===== Reset / Base ===== */
 * { box-sizing: border-box; }
+
+:root {
+  /* Espacio entre contenido y footer (ajusta a tu gusto) */
+  --footer-gap: 50px;
+  --safe-bottom: env(safe-area-inset-bottom, 0px);
+}
+
+html, body {
+  height: 100%;
+}
+
 html, body {
   margin: 0;
   padding: 0;
   background-color: beige;
   color: black;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  min-height: 100%;
 }
 
-/* ---- MENÚ ---- */
+/* Layout para sticky footer */
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+main {
+  flex: 1; /* ocupa el espacio disponible y empuja el footer hacia abajo */
+
+}
+
+
+/* ===== Menú ===== */
 .menu ul {
-  /* barra horizontal */
   display: flex;
   align-items: center;
   gap: 16px;
-
-  /* Apariencia */
   margin: 0;
   padding: 0 16px;
   list-style: none;
@@ -25,21 +45,20 @@ html, body {
 }
 
 .menu li {
-
   display: flex;
   align-items: center;
 }
 
-/* Marca (logo + texto) opcional */
+/* Marca (logo + texto) */
 .menu .brand a {
   display: inline-flex;
   align-items: center;
   gap: 8px;
   font-weight: 700;
-  color: #111;          /* texto negro*/
+  color:rgb(117, 37, 37);
 }
 
-/* Imagen del logo */
+/* Logo */
 .menu img {
   width: 32px;
   height: 32px;
@@ -50,74 +69,128 @@ html, body {
 
 /* Enlaces del menú */
 .menu a {
-  color: #fff;             
+  color: #fff;
   text-decoration: none;
   font-family: 'Times New Roman', Times, serif;
   font-size: 18px;
-  padding: 12px 8px;                    /* zona clicable */
-  display: inline-block;               
+  padding: 12px 8px;
+  display: inline-block;
 }
 
-/* Hover correcto (sobre A) */
 .menu ul li a:hover {
   color: #111;
-  text-decoration: underline;
-}
-/*----FOOTER---*/
-  /* barra horizontal */
-  footer{
-  display: flex;
-  align-items: center;
-  gap: 20px;
-
-  /* Apariencia */
-  margin: 0;
-  padding: 0 16px;
-  list-style: none;
-  background-color: chocolate;
-  min-height: 60px;
+  text-decoration: none;
 }
 
+/* ===== Media ===== */
+img, iframe, video { 
+  max-width: 100%; 
+  height: auto; 
+  display: block; 
+}
 
-/* ---- CONTENIDO ---- */
+/* ===== Contenedor y main ===== */
 .container {
-   max-width: 1100px;
-    margin: 0 auto; 
-    padding: 0 16px; }
-main { 
-  padding: 24px 0; }
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
 
 
+/* dos columnas dentro del main */
+.page-rows {
+  display: flex;
+  gap: 0;
+}
 
+/* ===== Footer consistente ===== */
 
-.container-index .hero-img {
+.site-footer {
+
   width: 100%;
-  height: auto;
-  max-height: 420px;
-  object-fit: cover;
-  border-radius: 10px;
-  margin: 12px 0 16px;
+  background-color: #B85C18;   /* naranja */
+  color: white;                /* texto blanco */
+  padding: 24px 0;             /* altura del footer */
+  text-align: center;          /* centrar texto */
+  border-top: 1px solid rgba(0,0,0,0.15);
 }
-h1{
 
-  color: rgb(78, 78, 83);
+
+.footer-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+  
+
+
+/* ===== Títulos ===== */
+h1 {
+  color: rgb(117, 37, 37);
   text-align: center;
   text-decoration: none;
   list-style: none;
 }
-h1 a :hover{
 
-  color: rgb(248, 151, 61);
-  text-align: center;
+h1 a,
+h2 a,
+h3 a,
+h4 a {
+  text-decoration: none;
+  color: inherit;
+}
+
+
+h1 a:hover {
+  color: rgb(228, 78, 18);
+  text-decoration: none;
+}
+
+h1 a {
+  color: rgb(117, 37, 37);
   text-decoration: none;
   list-style: none;
 }
-/*-----Pagina Productos típicos---*/
 
+h2 a {
+  color: rgb(117, 37, 37);
+  text-decoration: none;
+  list-style: none;
+}
+
+/*=======INDEX======*/
+
+.container-index h1{
+text-decoration: none;
+list-style: none;
+color: rgb(117, 37, 37);
+}
+.Productostipicos h2 a{
+text-decoration: none;
+list-style: none;
+color: rgb(117, 37, 37);
+}
+.PlatosTipicos h3 a{
+text-decoration: none;
+list-style: none;
+color: rgb(117, 37, 37);
+
+}
+.BaresyRestaurantes h4 a{
+
+text-decoration: none;
+list-style: none;
+color: rgb(117, 37, 37);
+
+}
+
+/* ===== productos / dulces ===== */
 .productos-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 columnas iguales */
-  gap: 16px; /* separación entre tarjetas */
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
 }
 
 .producto {
@@ -125,45 +198,74 @@ h1 a :hover{
   border: 1px solid #e5e7eb;
   border-radius: 8px;
   padding: 12px;
+
+}
+.producto ul h2{
+
+ text-decoration: none;
+ list-style: none;
+ color: rgb(117, 37, 37);
+
 }
 
+.producto li h2{
+
+ text-decoration: none;
+ list-style: none;
+ color: rgb(117, 37, 37);
+
+}
+.producto h2 a {
+color: rgb(117, 37, 37);
+ text-decoration: none;
+ list-style: none;
+
+}
+
+.producto h1 a {
+color: rgb(117, 37, 37);
+ text-decoration: none;
+ list-style: none;
+
+}
+
+.producto h2  a:hover{
+ color: rgb(231, 14, 14);
+ text-decoration: none;
+ list-style: none;
+
+}
 .producto img {
   width: 100%;
-  height: 200px;      /* altura uniforme */
-  object-fit: cover;  /* recorta sin deformar */
+  height: 200px;
+  object-fit: cover;
   border-radius: 6px;
   display: block;
 }
 
-/* La grid de dulces (3/2/1 columnas) */
 .dulces-grid {
   display: grid;
   gap: 16px;
-  grid-template-columns: 1fr;               /* móvil: 1 */
+  grid-template-columns: 1fr; /* móvil */
 }
-
 @media (min-width: 641px) {
-  .dulces-grid { grid-template-columns: repeat(2, 1fr); }  /* tablet: 2 */
+  .dulces-grid { grid-template-columns: repeat(2, 1fr); }
 }
-
 @media (min-width: 1025px) {
-  .dulces-grid { grid-template-columns: repeat(3, 1fr); }  /* desktop: 3 */
+  .dulces-grid { grid-template-columns: repeat(3, 1fr); }
 }
 
-/* Tarjeta estándar (si ya tienes .producto, puedes usarla también aquí) */
 .dulce {
   background: #f7e687;
-  border: 1px solid  #e5e7eb;
+  border: 1px solid #e5e7eb;
   border-radius: 8px;
   padding: 12px;
 }
 
-/*  Hace que una tarjeta ocupe TODAS las columnas de la grid */
 .dulce--full {
-  grid-column: 1 / -1;   /* desde la 1 hasta la última, o sea, a lo ancho de toda la fila */
+  grid-column: 1 / -1;
 }
 
-/* Opcional: ajusta la imagen cuando la tarjeta es full-width */
 .dulce img {
   width: 100%;
   height: 200px;
@@ -172,5 +274,251 @@ h1 a :hover{
   display: block;
 }
 .dulce--full img {
-  height: 280px;         /* un poco más alta para que luzca al ser más ancha (ajústalo a tu gusto) */
+  height: 280px;
+}
+/*==== DEtalle2===*/
+
+.productosFarinato-grid{
+  display: grid;
+   grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+
+text-align: center;}
+
+.farinato h1 a{
+text-decoration: none;
+list-style: none;
+
+}
+
+.productosFarinato-grid {
+  background: #f7e687;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 12px;
+}
+
+.productosFarinato-grid img {
+
+  object-fit: cover;
+  border-radius: 6px;
+  display: block;
+}
+
+
+
+
+/*===== Platos típicos =========*/
+
+.container h2 a {
+  text-decoration: none;
+  list-style: none;
+  color: rgb(117, 37, 37);
+
+}
+
+.container h2  {
+  text-decoration: none;
+  list-style: none;
+  color: rgb(117, 37, 37);
+
+}
+.platostipicos h1 a:hover{
+  text-decoration: none;
+  list-style: none;
+  color: rgb(117, 37, 37);
+
+}
+.platostipicos h2 a:hover{
+  text-decoration: none;
+  list-style: none;
+  color: rgb(117, 37, 37);
+
+}
+.platostipicos a {
+  text-decoration: none;
+  list-style: none;
+  color: rgb(17, 9, 9);
+}
+.platostipicos h1 a {
+  text-decoration: none;
+  list-style: none;
+  color: rgb(117, 37, 37);
+}
+
+.platostipicos h2 a {
+  text-decoration: none;
+  list-style: none;
+  color: rgb(117, 37, 37);
+}
+.platostipicos h3 a {
+  text-decoration: none;
+  list-style: none;
+  color: rgb(117, 37, 37);
+
+}
+.platostipicos img{
+ width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 6px;
+  display: block;
+ 
+
+}
+/*==== Detalle5===*/
+
+.container{
+    margin-bottom: 40px; /* Ajusta el espacio */
+}
+
+/* ===== Bares y restaurantes===== */
+/* Mantengo lo tuyo */
+.imagenSalamanca{
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 12px auto 20px;
+  text-align: center;
+  border: 0;
+  
+  display: flex;
+  justify-content: center;
+
+
+}
+
+
+.barespinchos,
+.restaurantes,
+.cafesYcopas {
+display: grid;
+/*  grid-template-columns: 1.2fr 1fr;  texto | imagen */
+  align-items: start;
+  color: #111(117, 37, 37);          /* color texto*/
+ margin-bottom: 40px; /* Ajusta el espacio */
+  text-decoration:none;
+  list-style-type:none;
+}
+
+/* Enlaces sin subrayado y con color personalizado */
+
+.barespinchos a,
+.restaurantes a,
+.cafesYcopas a {
+
+  text-decoration: none;
+  list-style:none ;
+  color:#111;       /* color texto*/
+   list-style: none;
+}
+
+/* Accesibilidad: muestra subrayado al pasar o con teclado (opcional) */
+.barespinchos a:hover,
+.restaurantes a:hover,
+.cafesYcopas a:hover
+{
+  text-decoration: none;
+  list-style: none;
+}
+
+
+
+
+/* titulo*/
+.barespinchos h2 {
+  text-align: left;
+
+  border-radius: 10px;
+
+  color: rgb(117, 37, 37);
+  text-decoration: none;
+  list-style: none;
+}
+
+/* Título */
+.restaurantes  h3
+  {
+
+  text-align: left;
+
+  font-size: 1.15rem;
+  color: rgb(117, 37, 37);
+  text-decoration: none;
+  list-style: none;
+}
+.cafesYcopas h4 {
+
+  text-align: left;
+
+  font-size: 1.15rem;
+  color: rgb(117, 37, 37);
+    text-decoration: none;
+  list-style: none;
+  text-align: left;
+}
+
+
+.containerbaresyrestaurantes {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding-inline: 20px;
+  box-sizing: border-box;
+    color:#111;       /* color texto*/
+}
+
+
+/* Listas limpias */
+
+.barespinchos ul,
+.restaurantes ul,
+.cafesYcopas ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0 0 1rem 0;   /* margen inferior */
+
+}
+.barespinchos li,
+.restaurantes li,
+.cafesYcopas li {
+   margin: 0;
+  list-style: none;
+  text-decoration: none;
+  text-align: left;
+  color:#111;
+ }
+
+/* Responsivo: 3 → 2 → 1 columnas */
+@media (max-width: 900px) {
+  .columns-3 { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 640px) {
+  .columns-3 { grid-template-columns: 1fr; }
+}
+
+
+/*=====Página de enlaces y documentación======*/
+
+.containerlinks{
+ 
+  background:  rgb(201, 184, 172);
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 12px;
+    display: grid;
+   grid-template-columns: repeat(3, 1fr);
+}
+
+.documentacionYenlaces ul a {
+
+  text-decoration: none;
+  color:#111;
+  list-style: none;
+}
+
+.documentacionYenlaces li a {
+
+  text-decoration: none;
+ color:#111;
+  list-style: none;
 }
