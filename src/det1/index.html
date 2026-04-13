@@ -6,7 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Receta tradicional de hornazo salmantino con masa de pan y embutidos.">
      <link rel="stylesheet" href="../assets/css/style.css" >
-     <link rel="icon" href="../assets/imagenes/favicon.png" type="image/png" >
+     <link rel="icon" href="../assets/imagenes/favicon.svg" type="image/svg+xml">
+    <link rel="icon" href="../assets/imagenes/favicon.png" type="image/png">
+    <!-- Apple -->
+    <link rel="apple-touch-icon" href="../assets/imagenes/favicon.png">
 
 </head>
 <body>
@@ -19,7 +22,7 @@
     <ul>
 
        <li>
-         <a href="../index.html"><img src="../assets/imagenes/favicon.png" alt="paisajeSalamanca">INICIO</a>
+         <a href="../index.html"><img src="../assets/imagenes/optimizadas/favicon.webp" alt="paisajeSalamanca">INICIO</a>
   
        <li><a href="../categoria/ProductosTipicos.html">CATEGORIA</a></li>     
       <li><a href="../categoria2/PlatosTipicos.html">CATEGORIA2</a></li>
@@ -42,10 +45,39 @@
       </p>
  
 
-    <figure>
-   <a href="../categoria/ProductosTipicos.html"> <img src="../assets/imagenes/hornazo.png" alt="Hornazo"></a> 
-      <figcaption>Hornazo tradicional con masa de pan y embutidos.</figcaption>
-    </figure>
+ <figure>
+ <picture>
+      <!-- móvil -->
+      <source srcset="../assets/imagenes/optimizadas/hornazo-mobile.webp"
+              media="(max-width: 400px)"
+              type="image/webp">
+
+      <!-- tablet -->
+      <source srcset="../assets/imagenes/optimizadas/hornazo - tablet.webp"
+              media="(max-width: 900px)"
+              type="image/webp">
+
+      <!-- desktop -->
+      <source srcset="../assets/imagenes/optimizadas/hornazo.webp"
+              media="(min-width: 901px)"
+              type="image/webp">
+
+      <!-- fallback -->
+         <a href="../categoria/ProductosTipicos.html"><img src="../assets/imagenes/optimizadas/hornazo.webp"
+          alt="imagenhornazo"
+          class="hornazo-clip"
+           width="400"
+           height="2400"
+           loading="lazy">
+            </a>
+    </picture>
+ 
+
+    <figcaption>
+      Hornazo tradicional con masa de pan y embutidos.
+    </figcaption>
+  </figure>
+
 </section>
     <section class="ingredientes">
       <h2>Ingredientes</h2>

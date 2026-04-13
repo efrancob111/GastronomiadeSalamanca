@@ -6,7 +6,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Elaboración de producto farinato de Ciudad Rodriggo ">
  <link rel="stylesheet" href="../assets/css/style.css">
-     <link rel="icon" href="../assets/imagenes/favicon.png" type="image/png" >
+
+<!--favicon con formato png y svg -->
+     
+
+<link rel="icon" href="../assets/imagenes/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="../assets/imagenes/favicon.png" type="image/png">
+
+<!-- Apple devices -->
+<link rel="apple-touch-icon" href="../assets/imagenes/favicon.png">
+
  
 </head>
 <body>
@@ -17,7 +26,7 @@
     <ul>
 
        <li>
-         <a href="../index.html"><img src="../assets/imagenes/favicon.png" alt="banderaSalamanca">INICIO</a>
+         <a href="../index.html"><img src="../assets/imagenes/optimizadas/favicon.webp" alt="banderaSalamanca">INICIO</a>
   
        <li><a href="../categoria/ProductosTipicos.html">CATEGORIA</a></li>
       <li><a href="../categoria2/PlatosTipicos.html">CATEGORIA2</a></li>
@@ -39,8 +48,33 @@
 
     <!-- Imagen -->
     <figure>
-     <a href="../categoria/ProductosTipicos.html"> <img src="../assets/imagenes/FarinatoCiudadRodrigo.png" alt="imagen-clip" ></a></figure>
-     
+
+<picture>
+      <!-- móvil -->
+      <source srcset="../assets/imagenes/optimizadas/FarinatoCiudadRodrigo-mobile.webp"
+              media="(max-width: 400px)"
+              type="image/webp">
+
+      <!-- tablet -->
+      <source srcset="../assets/imagenes/optimizadas/FarinatoCiudadRodrigo-tablet.webp"
+              media="(max-width: 900px)"
+              type="image/webp">
+
+      <!-- desktop -->
+      <source srcset="../assets/imagenes/optimizadas/FarinatoCiudadRodrigo.webp"
+              media="(min-width: 901px)"
+              type="image/webp">
+
+      <!-- fallback -->
+         <a href="../categoria/ProductosTipicos.html"><img src="../assets/imagenes/optimizadas/FarinatoCiudadRodrigo.webp"
+          alt="imagen-clip"
+           width="600"
+           height="400"
+           loading="lazy">
+            </a>
+    </picture>
+ 
+</figure>
 
     <!-- Definición-->
     <section class="farinato">
@@ -78,10 +112,10 @@
     <section class="imagenes">
       <h2>Galería</h2>
       <div class="galeria">
-    <figure><a href="../categoria/ProductosTipicos.html"><img src="../assets/imagenes/MigasPanFarinato.png" alt="Migas de pan y especias"></a></figure>   
-    <figure><a href="../categoria/ProductosTipicos.html"><img src="../assets/imagenes/masaFarinatomezclamanteca.png" alt="Masa de farinato tras mezclar con manteca" ></a></figure>
+    <figure><a href="../categoria/ProductosTipicos.html"><img src="../assets/imagenes/optimizadas/MigasPanFarinato.webp" alt="Migas de pan y especias"></a></figure>   
+    <figure><a href="../categoria/ProductosTipicos.html"><img src="../assets/imagenes/optimizadas/masaFarinatomezclamanteca.webp" alt="Masa de farinato tras mezclar con manteca" ></a></figure>
         <figure>
-          <a href="../categoria/ProductosTipicos.html"><img src="../assets/imagenes/rodajasDeFarinatoalaSarten.png" alt="Rodajas de farinato dorándose en la sartén" ></a></figure>
+          <a href="../categoria/ProductosTipicos.html"><img src="../assets/imagenes/optimizadas/rodajasDeFarinatoalaSarten.webp" alt="Rodajas de farinato dorándose en la sartén" ></a></figure>
       </div>
     </section>
 
