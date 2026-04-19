@@ -1,14 +1,36 @@
 {
-  "name": "parcel-vanilla-starter",
+  "name": "gastronomia-salamanca",
+  "version": "1.0.0",
   "private": true,
-  "version": "0.0.0",
-  "source": "src/index.html",
   "scripts": {
-    "start": "parcel",
-    "build": "parcel build"
+    "dev": "parcel src/index.html --open",
+    "build": "parcel build src/index.html"
   },
-  "dependencies": {},
   "devDependencies": {
-    "parcel": "^2.14.0"
-  }
+    "parcel": "^2.14.0",
+    "postcss-cli": "^11.0.1"
+  },
+  "browserslist": [
+    "last 2 versions",
+    "not dead"
+  ],
+  "dependencies": {
+    "autoprefixer": "^10.4.27",
+    "postcss": "^8.5.8",
+    "sharp": "^0.34.5"
+  },
+  "description": "",
+
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/efrancob111/GastronomiadeSalamanca.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/efrancob111/GastronomiadeSalamanca/issues"
+  },
+  "homepage": "https://github.com/efrancob111/GastronomiadeSalamanca#readme"
 }
