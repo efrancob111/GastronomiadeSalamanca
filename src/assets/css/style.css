@@ -17,6 +17,10 @@ html, body {
   background-color: beige;
   color: black;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  
+  height: 100%;
+
+
 }
 
 
@@ -286,7 +290,7 @@ color: rgb(117, 37, 37);
   }
 }
 
-/*===USO DE CLIP-PATH en la pagina index  y bares y restaurantes====*/
+/*===USO DE CLIP-PATH en la pagina index  ====*/
 
 
 .imagen-clip {
@@ -317,6 +321,34 @@ color: rgb(117, 37, 37);
 .imagen-clip:visited {
   transform: scale(1.02);
 }
+/*===USO DE CLIP-PATH en la pagina bares y restaurantes  ====*/
+.salamanca-clip {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 2rem auto;
+
+  clip-path: polygon(
+    4% 0%,    /* esquina superior izq */
+    96% 0%,   /* esquina superior der */
+    100% 8%,
+    100% 92%,
+    96% 100%,
+    4% 100%,
+    0% 92%,
+    0% 8%
+  );
+
+  transition: transform 0.3s ease;
+}
+.salamanca-clip:hover {
+  transform: scale(1.02);
+}
+
+.salamanca-clip:visited {
+  transform: scale(1.02);}
+
+
 /*===USO DE CLIP-PATH que se muestre la imagen forma circular en la página de enlaces====*/
 .plaza-clip {
   width: 100%;
@@ -402,6 +434,11 @@ transition: transform 0.3s ease,
     opacity: 1;
     transform: scale(1);
   }
+}
+/*animación  transición en css de imagen de portada*/
+ imagen-clip a:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
 }
 
 
@@ -590,6 +627,59 @@ list-style: none;
 
 
 /* ===== Bares y restaurantes===== */
+
+/*css con background adaptable en la imagene de bares y restaurantes */
+
+.imagenbaresyrestaurantes {
+  background-image: url("../imagenes/optimizadas/ImagenSalamancamobile.webp");
+  width: 100vw;              /* todo el ancho */
+  height: 80vh;              /* MISMA altura siempre */
+  margin-inline: calc(50% - 50vw); /* rompe el ancho del container */
+  
+  background-size: cover;
+  background-position: center;
+}
+
+.containerbaresyrestaurantes {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.salamanca-clip{
+
+  position: absolute;    
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+
+  width: min(80%, 600px);
+}
+
+
+/*para moviles*/
+@media (max-width: 599px) {
+  .imagen-fondo {
+    height: 30vh;
+  }
+}
+
+
+
+/* Tablet */
+@media (min-width: 600px) {
+  .imagenbaresyrestaurantes {
+    background-image: url("../imagenes/optimizadas/ImagenSalamancatablet.webp");
+  }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+  .imagenbaresyrestaurantes {
+    background-image: url("../imagenes/optimizadas/ImagenSalamancadesktop.webp");
+  }
+}
+
+
 
 .imagenSalamanca{
  
@@ -842,3 +932,11 @@ img {
   vertical-align: middle;  /* evita que baje */
   margin-right: 8px;       /* espacio entre icono y texto */
   display: inline-block;   /* se mantiene en la misma línea */}
+
+
+  /*videos responsive*/
+  .video-wrapper{
+ position: relative;
+  width: 100%;
+
+  }
