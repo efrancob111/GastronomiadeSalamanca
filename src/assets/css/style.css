@@ -631,7 +631,7 @@ list-style: none;
 /*css con background adaptable en la imagene de bares y restaurantes */
 
 .imagenbaresyrestaurantes {
-  background-image: url("../src/assets/imagenes/optimizadas/SalamancaFondo.webp");
+  background-image: url("../imagenes/optimizadas/SalamancaFondo.webp");
   width: 100vw;              /* todo el ancho */
   height: 80vh;              /* MISMA altura siempre */
   margin-inline: calc(50% - 50vw); /* rompe el ancho del container */
