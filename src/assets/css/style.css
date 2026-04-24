@@ -656,26 +656,27 @@ list-style: none;
 }
 
 
-/*para moviles*/
-@media (max-width: 599px) {
-  .imagen-fondo {
-    height: 30vh;
-  }
-}
 
+
+/* Moviles  */
+@media (max-width: 599px) {
+.imagenbaresyrestaurantes {
+  background-image: url("../imagenes/optimizadas/ImagenSalamanca.webp");
+  height: 30vh;
+}}
 
 
 /* Tablet */
 @media (min-width: 600px) {
   .imagenbaresyrestaurantes {
-    background-image: url("../imagenes/optimizadas/ImagenSalamancatablet.webp");
+    background-image: url("../imagenes/optimizadas/ImagenSalamanca.webp");
   }
 }
 
 /* Desktop */
 @media (min-width: 1024px) {
   .imagenbaresyrestaurantes {
-    background-image: url("../imagenes/optimizadas/ImagenSalamancadesktop.webp");
+    background-image: url("../imagenes/optimizadas/ImagenSalamanca.webp");
   }
 }
 
