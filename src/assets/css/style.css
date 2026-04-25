@@ -708,6 +708,24 @@ list-style: none;
 }}
 
 
+
+/* ====== Para que la pagina de bares y restaurantes en dispositivos moviles no tape la imagen el texto ====== */
+@media (max-width: 768px) {
+
+  .salamanca-clip {
+    position: static;          /* vuelve al flujo normal */
+    transform: none;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    z-index: auto;
+  }
+
+  .imagenSalamanca {
+    display: block;
+    margin-bottom: 1.5rem;
+  }
+}
 /* Tablet */
 @media (min-width: 600px) {
   .imagenbaresyrestaurantes {
@@ -809,7 +827,7 @@ list-style: none;
 }
 
 
-/* Listas limpias */
+
 
 .barespinchos ul,
 .restaurantes ul,
@@ -837,6 +855,8 @@ list-style: none;
 @media (max-width: 440px) {
   .columns-3 { grid-template-columns: repeat(1, 1fr) }
 }
+
+
 
 
 /*=====Página de enlaces y documentación======*/
