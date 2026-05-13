@@ -5,12 +5,14 @@
   <title>Gastronomia de Salamanca</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Bares y restaurantes más destacados en salamanca ">
-  <!--favicon-->
-      <link rel="stylesheet" href="../src/assets/css/style.css" >
+ <link rel="preload" href="../assets/css/style.css" as="style" onload="this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="../assets/css/style.css"></noscript>
+
 
 
 <!-- Favicon moderno y responsive -->
 <link rel="icon" href="assets/imagenes/favicon.svg" type="image/svg+xml">
+<link rel="preload" as="image" href="./assets/imagenes/optimizadas/SalamancaFondo.webp">
 
 
 
@@ -27,13 +29,13 @@
 
        <li>
          
-     <a href="./index.html"> <img src="./assets/imagenes/optimizadas/favicon.webp" loading="lazy" alt="bandera">INDEX</a></li>
+     <a href="./index.html"> <img src="./assets/imagenes/optimizadas/favicon.webp"  width="32" height="32"  alt="banderaSalamanca">Inicio</a></li>
 
   
-       <li><a href="categoria/ProductosTipicos.html">CATEGORIA</a></li>
-      <li><a href="categoria2/PlatosTipicos.html">CATEGORIA2</a></li>
-       <li><a href="BaresyRestaurantes.html">BARES Y RESTAURANTES</a></li>
-       <li><a href="links.html">DOCUMENTACION Y ENLACES</a></li>
+       <li><a href="categoria/ProductosTipicos.html">Categoria</a></li>
+      <li><a href="categoria2/PlatosTipicos.html">Categoria2</a></li>
+       <li><a href="BaresyRestaurantes.html">Bares y Restaurantes</a></li>
+       <li><a href="links.html">Documentos y Enlaces</a></li>
     </ul>
   </nav>
   </header>
@@ -44,13 +46,13 @@
   <section class="baresyrestaurantes">
         
       <div class="imagenSalamanca">
-   <a href="../src/index.html"><img src="./assets/imagenes/optimizadas/SalamancaFondo.webp" loading="lazy" alt="ImagenSalamanca" class="salamanca-clip"></a>
+   <a href="../src/index.html"><img src="./assets/imagenes/optimizadas/SalamancaFondo.webp"   width="800" height="600" alt="ImagenSalamanca" fetchpriority="high"  class="salamanca-clip"></a>
  
       </div>
       
     
     <div class="barespinchos">
-    <h2 class="titulo-animado"><img src="assets/imagenes/iconoBar.png" loading="lazy" alt="iconobar"  class="icono">Bares de Tapeo y pinchos</h2>
+    <h2 class="titulo-animado"><img src="assets/imagenes/iconoBar.png" width="32" height="32"  loading="lazy"  alt="iconobar"  class="icono">Bares de Tapeo y pinchos</h2>
 
     <ul>
       
@@ -77,7 +79,7 @@
      
       
      
-   <h3 class="titulo-animado"><img src="assets/imagenes/iconorestaurantes.avif" loading="lazy"  alt="iconorestaurantes"   class="icono">Restaurantes</h3>
+   <h3 class="titulo-animado"><img src="assets/imagenes/iconorestaurantes.avif" width="32" height="32"  loading="lazy"  alt="iconorestaurantes"   class="icono">Restaurantes</h3>
     <ul>
     <li><a href="https://www.casapaca.com/"> Casa Paca</a></li>
     <li><a href="https://www.tripadvisor.es/Restaurant_Review-g187493-d1897584-Reviews-La_Hoja_21-Salamanca_Province_of_Salamanca_Castile_and_Leon.html">Hoja 21</a></li>
@@ -91,7 +93,7 @@
 
  
   <div class="cafesYcopas">
-  <h4 class="titulo-animado"><img src="assets/imagenes/cafe.jpg" loading="lazy"  alt="iconocafe"  class="icono">Cafés</h4>
+  <h4 class="titulo-animado"><img src="assets/imagenes/cafe.jpg" width="32" height="32"  loading="lazy"  alt="iconocafe"  class="icono">Cafés</h4>
     <ul>
      <li><a href="https://tiovivobar.com/">Tío Vivo</a></li> 
      <li><a href="https://revolutionrockbar.es/bar/cafe-bar-capitan-haddock/">Capitan Harok</a></li>

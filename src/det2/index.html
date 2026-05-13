@@ -5,13 +5,19 @@
   <title>Gastronomia de Salamanca</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Elaboración de producto farinato de Ciudad Rodriggo ">
- <link rel="stylesheet" href="../assets/css/style.css">
+ <link rel="preload" href="../assets/css/style.css" as="style" onload="this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="../assets/css/style.css"></noscript>
+
+ <link rel="preload" as="image" href="../assets/imagenes/optimizadas/FarinatoCiudadRodrigo.webp">
 
 <!--favicon con formato png y svg -->
      
 
 <link rel="icon" href="../assets/imagenes/favicon.svg" type="image/svg+xml">
 
+
+<link rel="preconnect" href="https://www.youtube.com">
+<link rel="preconnect" href="https://i.ytimg.com">
 
  
 </head>
@@ -23,13 +29,13 @@
     <ul>
 
        <li>
-         <a href="../index.html"><img src="../assets/imagenes/optimizadas/favicon.webp" loading="lazy" alt="banderaSalamanca">INICIO</a>
+         <a href="../index.html"><img src="../assets/imagenes/optimizadas/favicon.webp" width="32" height="32"  alt="banderaSalamanca">Inicio</a>
   
-       <li><a href="../categoria/ProductosTipicos.html">CATEGORIA</a></li>
-      <li><a href="../categoria2/PlatosTipicos.html">CATEGORIA2</a></li>
-       <li><a href="../BaresyRestaurantes.html"> BARES Y RESTAURANTES</a></li>
+       <li><a href="../categoria/ProductosTipicos.html">Categoria</a></li>
+      <li><a href="../categoria2/PlatosTipicos.html">Categoria2</a></li>
+       <li><a href="../BaresyRestaurantes.html">Bares y Restaurantes</a></li>
    
-         <li><a href="../det2/index.html"> DETALLE-PRODUCTO-FARINATO</a></li>
+         <li><a href="../det2/index.html">Detalle del producto Farinato</a></li>
     
     </ul>
   </nav>
@@ -50,26 +56,30 @@
       <!-- móvil -->
       <source srcset="../assets/imagenes/optimizadas/FarinatoCiudadRodrigo-mobile.webp"
               media="(max-width: 400px)"
+               sizes="100vw"
               type="image/webp">
 
       <!-- tablet -->
       <source srcset="../assets/imagenes/optimizadas/FarinatoCiudadRodrigo-tablet.webp"
               media="(max-width: 900px)"
+               sizes="100vw"
               type="image/webp">
 
       <!-- desktop -->
       <source srcset="../assets/imagenes/optimizadas/FarinatoCiudadRodrigo.webp"
               media="(min-width: 901px)"
+               sizes="100vw"
               type="image/webp">
 
       <!-- fallback -->
-        <img src="../assets/imagenes/optimizadas/FarinatoCiudadRodrigo.webp"
-        loading="lazy"
-          alt="foto de farinato" class="farinato-clip"
-           width="600"
-           height="400"
-           loading="lazy">
-           
+        
+    <img src="../assets/imagenes/optimizadas/FarinatoCiudadRodrigo.webp"
+     alt="foto de farinato"
+     class="farinato-clip"
+     width="400"
+     height="240"
+     fetchpriority="high">
+        
     </picture>
   </a>
 </figure>
@@ -84,8 +94,10 @@
     </section>
 
     <!-- Elaboración / Receta -->
-    <section class="receta">
-      <h2 >Receta</h2>
+    
+<section aria-labelledby="titulo-receta">
+   <h2 id="titulo-receta">Receta</h2>
+
       <h3>Ingredientes:</h3>
       <ul>
         <li>500 g de migas de pan  muy finas</li>
@@ -110,10 +122,10 @@
     <section class="imagenes">
       <h2>Galería</h2>
       <div class="galeria">
-    <figure><a href="../categoria/ProductosTipicos.html"><img src="../assets/imagenes/optimizadas/MigasPanFarinato.webp"  loading="lazy" alt="Migas de pan y especias" class="farinato-clip"></a></figure>   
-    <figure><a href="../categoria/ProductosTipicos.html"><img src="../assets/imagenes/optimizadas/masaFarinatomezclamanteca.webp" loading="lazy"  alt="Masa de farinato tras mezclar con manteca" class="farinato-clip"></a></figure>
+    <figure><a href="../categoria/ProductosTipicos.html"><img src="../assets/imagenes/optimizadas/MigasPanFarinato.webp" width="600" height="400"  loading="lazy" alt="Migas de pan y especias" class="farinato-clip"></a></figure>   
+    <figure><a href="../categoria/ProductosTipicos.html"><img src="../assets/imagenes/optimizadas/masaFarinatomezclamanteca.webp" width="600" height="400"  loading="lazy"  alt="Masa de farinato tras mezclar con manteca" class="farinato-clip"></a></figure>
         <figure>
-          <a href="../categoria/ProductosTipicos.html"><img src="../assets/imagenes/optimizadas/rodajasDeFarinatoalaSarten.webp" loading="lazy" alt="Rodajas de farinato dorándose en la sartén" class="farinato-clip"></a></figure>
+          <a href="../categoria/ProductosTipicos.html"><img src="../assets/imagenes/optimizadas/rodajasDeFarinatoalaSarten.webp"  width="600" height="400" loading="lazy" alt="Rodajas de farinato dorándose en la sartén" class="farinato-clip"></a></figure>
       </div>
     </section>
 
@@ -125,14 +137,15 @@
     </section>
 
     <!-- Vídeo de YouTube  -->
-    <section Class="videoElaboracionFarinato">
+   <section class="videoElaboracionFarinato">
       <h2>Vídeo de elaboración del Farinato</h2>
       <div class="video-wrapper">
   
         <iframe
           src="https://www.youtube.com/watch?v=F5ofy-6bfDE"
-          title="Elaboración del farinato — vídeo ilustrativo"
+          aria-label="Elaboración del farinato"
           loading="lazy"
+          alt="Farinato típico de Ciudad Rodrigo sobre plato"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
            allowfullscreen referrerpolicy="origin-when-cross-origin"></iframe>
 </div>
