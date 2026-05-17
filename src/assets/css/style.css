@@ -373,7 +373,8 @@ color:  #0055aa;
 /*===USO DE CLIP-PATH en detalle hornazo====*/
 .hornazo-clip{
 
-  width: 40%;
+ 
+  width: 200px;   /* o 180px aprox */
   height: auto;
   display: block;
   margin: 1rem 0; /* La imagen se va a la izquierda */
@@ -657,8 +658,6 @@ list-style: none;
 
 
 }
-
-
 
 
 /* ====  Para Tablets ===== */
