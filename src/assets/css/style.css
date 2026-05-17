@@ -10,10 +10,13 @@ html, body {
 
 body {
 
-  min-height: 100svh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  background-color:beige 
+  background-color:beige ;
+  font-weight:400;
+    font-family: "Verdana", "Arial", sans-serif;
+
 }
 
 main {
@@ -42,8 +45,10 @@ main {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  font-weight: 700;
-  color:rgb(117, 37, 37);
+  font-weight: 800;
+  color:#fcf8f8;
+
+   
 }
 
 /* Logo */
@@ -59,14 +64,14 @@ main {
 .menu a {
   color: #fff;
   text-decoration: none;
-  font-family: 'Times New Roman', Times, serif;
-  font-size: 18px;
+   font-family: "Verdana", "Arial", sans-serif;
+  font-size: 20px;
   padding: 12px 8px;
   display: inline-block;
 }
 
 .menu ul li a:hover {
-  color: #111;
+  color: #f7f1f1;
   text-decoration: none;
 }
 
@@ -110,13 +115,11 @@ img, iframe, video {
   width: 100%;
   background-color: #B85C18;   /* naranja */
   color: white;                /* texto blanco */
-  padding: 24px 0;             /* altura del footer */
   text-align: center;          /* centrar texto */
   border-top: 1px solid rgba(0,0,0,0.15);
-
-  
   margin-bottom: 0;
   padding-bottom: 24px;
+    padding: 1.5rem;
 
 }
 
@@ -125,7 +128,7 @@ img, iframe, video {
   max-width: 1100px;
   margin: 0 auto;
   font-size: 18px;
-  font-weight: 500;
+  font-weight: 600;
 }
 
   
@@ -133,7 +136,7 @@ img, iframe, video {
 
 /* ===== Títulos ===== */
 h1 {
-  color: rgb(117, 37, 37);
+  color: #003366;
   text-align: center;
   text-decoration: none;
   list-style: none;
@@ -149,18 +152,18 @@ h4 a {
 
 
 h1 a:hover {
-  color: rgb(228, 78, 18);
+  color: #0055aa;
   text-decoration: none;
 }
 
 h1 a {
-  color: rgb(117, 37, 37);
+  color: #0055aa;
   text-decoration: none;
   list-style: none;
 }
 
 h2 a {
-  color: rgb(117, 37, 37);
+  color: #0055aa;
   text-decoration: none;
   list-style: none;
 }
@@ -170,24 +173,24 @@ h2 a {
 .container-index h1{
 text-decoration: none;
 list-style: none;
-color: rgb(117, 37, 37);
+color:  #0055aa;
 }
 .Productostipicos h2 a{
 text-decoration: none;
 list-style: none;
-color: rgb(117, 37, 37);
+color: #0055aa;
 }
 .PlatosTipicos h3 a{
 text-decoration: none;
 list-style: none;
-color: rgb(117, 37, 37);
+color:  #0055aa;
 
 }
 .BaresyRestaurantes h4 a{
 
 text-decoration: none;
 list-style: none;
-color: rgb(117, 37, 37);
+color:  #0055aa;
 
 }
 /* ===== productos / dulces ===== */
@@ -208,7 +211,7 @@ color: rgb(117, 37, 37);
 
  text-decoration: none;
  list-style: none;
- color: rgb(117, 37, 37);
+ color: #003366;
 
 }
 
@@ -216,11 +219,11 @@ color: rgb(117, 37, 37);
 
  text-decoration: none;
  list-style: none;
- color: rgb(117, 37, 37);
+ color: #003366(117, 37, 37);
 
 }
 .producto h2 a {
-color: rgb(117, 37, 37);
+color:  #0055aa;
  text-decoration: none;
  list-style: none;
 
@@ -261,6 +264,10 @@ color: rgb(117, 37, 37);
   display: flex;
   justify-content: center;
   margin: 0.5rem 0 1.5rem;
+}
+
+.onda-svg {
+  display: block;
 }
 
 .onda-svg path {
@@ -465,14 +472,15 @@ transition: transform 0.3s ease,
 
 /*====PRODUCTOS TÍPICOS===*/
 .producto h1 a {
-color: rgb(117, 37, 37);
+color: #003366;
  text-decoration: none;
  list-style: none;
 
 }
 
-.producto h2  a:hover{
- color: rgb(231, 14, 14);
+.producto h2  a:hover,
+a:focus {
+ color:  #0055aa;
  text-decoration: none;
  list-style: none;
 
@@ -559,48 +567,58 @@ list-style: none;
 .container h2 a {
   text-decoration: none;
   list-style: none;
-  color: rgb(117, 37, 37);
+  color: #0055aa;
 
 }
 
 .container h2  {
   text-decoration: none;
   list-style: none;
-  color: rgb(117, 37, 37);
+  color:#003366;
 
 }
-.platostipicos h1 a:hover{
-  text-decoration: none;
-  list-style: none;
-  color: rgb(117, 37, 37);
 
-}
-.platostipicos h2 a:hover{
+
+.platostipicos h2 a:hover,
+a:focus{
   text-decoration: none;
   list-style: none;
-  color: rgb(117, 37, 37);
+  color:  #0055aa;
 
 }
 .platostipicos a {
   text-decoration: none;
   list-style: none;
-  color: rgb(17, 9, 9);
+  color:#0055aa;
 }
 .platostipicos h1 a {
   text-decoration: none;
   list-style: none;
-  color: rgb(117, 37, 37);
+  color: #0055aa;
+}
+.platostipicos h1 a:hover,
+a:focus{
+  text-decoration: none;
+  list-style: none;
+  color:#0055aa;
 }
 
 .platostipicos h2 a {
   text-decoration: none;
   list-style: none;
-  color: rgb(117, 37, 37);
+  color: #0055aa;
 }
 .platostipicos h3 a {
   text-decoration: none;
   list-style: none;
-  color: rgb(117, 37, 37);
+  color: #0055aa;
+
+}
+.platostipicos h3 a:hover,
+a:focus{
+  text-decoration: none;
+  list-style: none;
+  color:  #0055aa;
 
 }
 .platostipicos img{
@@ -620,7 +638,7 @@ list-style: none;
 }
 
 
-/*===Páginas detalle con fondo azul y centradas para det1,det2,det4,det5==*/
+/*===Páginas detalle centradas para det1,det2,det4,det5==*/
 .detalle-recetaHornazo-grid,
 .productosFarinato-grid,
 .recetachanfaina-grid,
@@ -713,7 +731,7 @@ list-style: none;
 @media (max-width: 768px) {
 
   .salamanca-clip {
-    position: static;          /* vuelve al flujo normal */
+    position: static;     
     transform: none;
     width: 100%;
     max-width: 100%;
@@ -762,7 +780,7 @@ list-style: none;
 .cafesYcopas {
   display: grid;
   align-items: start;
-  color: rgb(117, 37, 37); /* color texto */
+  color: #003366; /* color texto */
   margin-bottom: 40px;   /* Ajusta el espacio */
 }
 
@@ -773,16 +791,20 @@ list-style: none;
 .restaurantes a,
 .cafesYcopas a {
   text-decoration: none;
-  color: #111;
+  color:  #0055aa;
 }
 
 
 /* Accesibilidad: muestra subrayado al pasar o con teclado (opcional) */
 .barespinchos a:hover,
+.barespinchos a:focus,
 .restaurantes a:hover,
-.cafesYcopas a:hover{
+.restaurantes a:focus,
+.cafesYcopas a:hover,
+.cafesYcopas a:focus{
   text-decoration: none;
   list-style: none;
+ color: #0055aa;
 }
 
 
@@ -790,11 +812,18 @@ list-style: none;
 .barespinchos h2 {
   text-align: left;
  border-radius: 10px;
- color: rgb(117, 37, 37);
+ color: #003366;
   text-decoration: none;
   list-style: none;
 }
-
+.barespinchos h2 a:hover,
+a:focus {
+  text-align: left;
+ border-radius: 10px;
+ color: #0055aa;
+  text-decoration: none;
+  list-style: none;
+}
 /* Título */
 .restaurantes  h3
   {
@@ -802,21 +831,27 @@ list-style: none;
   text-align: left;
 
   font-size: 1.15rem;
-  color: rgb(117, 37, 37);
+  color: #003366;
   text-decoration: none;
   list-style: none;
 }
+.restaurantes h3 a:hover,
+a:focus {
+  color: #0055aa;}
 .cafesYcopas h4 {
 
   text-align: left;
 
   font-size: 1.15rem;
-  color: rgb(117, 37, 37);
+  color:#003366;
     text-decoration: none;
   list-style: none;
   text-align: left;
 }
-
+.cafesYcopas h4 a:hover,
+a:focus{
+color: #0055aa;
+}
 
 .containerbaresyrestaurantes {
   max-width: 1100px;
@@ -962,7 +997,8 @@ text-decoration: none;
 list-style: none;
 
 }
-.containerlinks a:hover{
+.containerlinks a:hover,
+a:focus{
 color:red;
 text-decoration: none;
 list-style: none;
