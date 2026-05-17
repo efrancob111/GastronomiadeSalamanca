@@ -71,7 +71,7 @@ main {
 }
 
 .menu ul li a:hover {
-  color: #f7f1f1;
+  color: #FFD700;
   text-decoration: none;
 }
 
@@ -151,7 +151,8 @@ h4 a {
 }
 
 
-h1 a:hover {
+h1 a:hover ,
+h1 a:focus{
   color: #0055aa;
   text-decoration: none;
 }
@@ -222,7 +223,8 @@ color:  #0055aa;
  color: #003366(117, 37, 37);
 
 }
-.producto h2 a {
+.producto h2 a:hover,
+.producto h2 a:focus {
 color:  #0055aa;
  text-decoration: none;
  list-style: none;
@@ -479,7 +481,7 @@ color: #003366;
 }
 
 .producto h2  a:hover,
-a:focus {
+.producto h2 a:focus {
  color:  #0055aa;
  text-decoration: none;
  list-style: none;
@@ -580,7 +582,7 @@ list-style: none;
 
 
 .platostipicos h2 a:hover,
-a:focus{
+.platostipicos h2 a:focus{
   text-decoration: none;
   list-style: none;
   color:  #0055aa;
@@ -597,7 +599,7 @@ a:focus{
   color: #0055aa;
 }
 .platostipicos h1 a:hover,
-a:focus{
+.platostipicos h1 a:focus{
   text-decoration: none;
   list-style: none;
   color:#0055aa;
@@ -615,7 +617,7 @@ a:focus{
 
 }
 .platostipicos h3 a:hover,
-a:focus{
+.platostipicos h3 a:focus{
   text-decoration: none;
   list-style: none;
   color:  #0055aa;
@@ -817,7 +819,7 @@ a:focus{
   list-style: none;
 }
 .barespinchos h2 a:hover,
-a:focus {
+.barespinchos h2 a:focus {
   text-align: left;
  border-radius: 10px;
  color: #0055aa;
@@ -836,7 +838,7 @@ a:focus {
   list-style: none;
 }
 .restaurantes h3 a:hover,
-a:focus {
+.restaurantes h3 a:focus {
   color: #0055aa;}
 .cafesYcopas h4 {
 
@@ -849,7 +851,7 @@ a:focus {
   text-align: left;
 }
 .cafesYcopas h4 a:hover,
-a:focus{
+.cafesYcopas h4 a:focus{
 color: #0055aa;
 }
 
@@ -998,7 +1000,7 @@ list-style: none;
 
 }
 .containerlinks a:hover,
-a:focus{
+.containerlinks a:focus{
 color:red;
 text-decoration: none;
 list-style: none;
@@ -1010,8 +1012,11 @@ color: rgb(117, 37, 37);
 
 }
 .containerlinks h2 a:hover,
+.containerlinks h2 a:focus,
 .containerlinks h3 a:hover,
-.containerlinks h4 a:hover{
+.containerlinks h3 a:focus,
+.containerlinks h4 a:hover,
+.containerlinks h4 a:focus{
 
 color: red;
 text-decoration: none;
