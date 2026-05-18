@@ -573,72 +573,74 @@ list-style: none;
 
 
 /*===== Platos típicos =========*/
-
-.container h2 a {
+/* Enlaces dentro de encabezados en .container */
+.container h2 a,
+.container h3 a,
+.container h4 a,
+.container h5 a {
   text-decoration: none;
-  list-style: none;
   color: #0055aa;
-
 }
 
-.container h2  {
+/* Encabezados dentro de .container */
+.container h2,
+.container h3,
+.container h4,
+.container h5 {
   text-decoration: none;
-  list-style: none;
-  color:#003366;
-
+  color: #003366;
 }
 
-
+/* Estados hover/focus en .platostipicos */
 .platostipicos h2 a:hover,
-.platostipicos h2 a:focus{
+.platostipicos h2 a:focus,
+.platostipicos h3 a:hover,
+.platostipicos h3 a:focus,
+.platostipicos h4 a:hover,
+.platostipicos h4 a:focus {
   text-decoration: none;
-  list-style: none;
-  color:  #0055aa;
-
+  color: #0055aa;
 }
+
+/* Todos los enlaces en .platostipicos */
 .platostipicos a {
   text-decoration: none;
-  list-style: none;
-  color:#0055aa;
+  color: #0055aa;
 }
+
+/* h1 en .platostipicos */
 .platostipicos h1 a {
   text-decoration: none;
-  list-style: none;
   color: #0055aa;
 }
+
 .platostipicos h1 a:hover,
-.platostipicos h1 a:focus{
+.platostipicos h1 a:focus {
   text-decoration: none;
-  list-style: none;
-  color:#0055aa;
-}
-
-.platostipicos h2 a {
-  text-decoration: none;
-  list-style: none;
   color: #0055aa;
 }
-.platostipicos h3 a {
-  text-decoration: none;
-  list-style: none;
-  color: #0055aa;
 
+.platostipicos h2 a,
+.platostipicos h3 a,
+.platostipicos h4 a,
+.platostipicos h5 a {
+  text-decoration: none;
+  color: #0055aa;
 }
+
 .platostipicos h3 a:hover,
-.platostipicos h3 a:focus{
+.platostipicos h3 a:focus {
   text-decoration: none;
-  list-style: none;
-  color:  #0055aa;
-
+  color: #0055aa;
 }
-.platostipicos img{
- width: 100%;
+
+/* Imágenes en .platostipicos */
+.platostipicos img {
+  width: 100%;
   height: 200px;
   object-fit: cover;
   border-radius: 6px;
   display: block;
- 
-
 }
 /**Detalle1===*/
 
