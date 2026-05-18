@@ -23,6 +23,13 @@ main {
   flex: 1;
 }
 
+@font-face {
+  font-family: "MiFuenteCustom";
+  src: url("../fuentes/MiFuente.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap; }
+
 /* ===== Menú ===== */
 .menu ul {
   display: flex;
@@ -467,7 +474,7 @@ transition: transform 0.3s ease,
   }
 }
 /*animación  transición en css de imagen de portada*/
- imagen-clip a:hover {
+ .imagen-clip a:hover {
   transform: scale(1.05);
   transition: transform 0.3s ease;
 }
@@ -974,6 +981,10 @@ color:#111
 list-style: none;
 color: rgb(117, 37, 37);
 text-decoration: none;
+
+ display: inline-block;
+  padding: 10px;
+
 }
 
 
@@ -982,6 +993,7 @@ text-decoration: none;
 color:#111;
 text-decoration: none;
 list-style: none;
+  margin-bottom: 12px;
 
 }
 
@@ -1030,12 +1042,23 @@ img {
   display: flex;
 }
 .icono{
- width: 24px;          /* tamaño recomendado */
-  height: 24px;
+ 
+  width: 32px;
+  height: 32px;
   vertical-align: middle;  /* evita que baje */
   margin-right: 8px;       /* espacio entre icono y texto */
   display: inline-block;   /* se mantiene en la misma línea */}
+a.icon-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  
+  display: inline-block;
+  padding: 8px;
 
+}
 
   /*videos responsive*/
 
