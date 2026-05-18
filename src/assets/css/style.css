@@ -62,7 +62,7 @@ main {
 
 /* Enlaces del menú */
 .menu a {
-   color: #f0f0f0; 
+   color:#f0f0f0;  
   text-decoration: none;
    font-family: "Verdana", "Arial", sans-serif;
   font-size: 20px;
@@ -70,7 +70,11 @@ main {
   display: inline-block;
 }
 .menu a:hover{
-   color: #FFFFFF;  
+  color: #FFFFFF;   
+}
+.menu a:focus {
+  outline: 2px solid #FFD700;
+  outline-offset: 2px;
 }
 
 .menu ul li a:hover {
@@ -151,24 +155,23 @@ h3 a,
 h4 a {
   text-decoration: none;
   color: inherit;
-   color: #003366;  
 }
 
 
 h1 a:hover ,
 h1 a:focus{
-  color: #002244; 
+  color: #0055aa;
   text-decoration: none;
 }
 
 h1 a {
- color: #003366;  
+  color: #0055aa;
   text-decoration: none;
   list-style: none;
 }
 
 h2 a {
-   color: #003366;  
+  color: #0055aa;
   text-decoration: none;
   list-style: none;
 }
