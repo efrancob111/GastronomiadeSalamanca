@@ -15,9 +15,11 @@ body {
   flex-direction: column;
   background-color:beige ;
   font-weight:400;
-    font-family: "Verdana", "Arial", sans-serif;
+  font-family: 'Roboto', sans-serif;
 
 }
+
+
 
 main {
   flex: 1;
@@ -76,6 +78,14 @@ main {
   outline: 2px solid #FFD700;
   outline-offset: 2px;
 }
+
+
+a:focus-visible {
+  outline: 3px solid #ff6600;
+
+}
+
+
 
 .menu ul li a:hover {
   color: #FFD700;
