@@ -2,87 +2,70 @@
 <html lang="es">
 <head>
   <meta charset="utf-8">
-  <title>detalle-recetaHornazo</title>
+  <title>Detalle receta Hornazo | Gastronomía de Salamanca</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Receta tradicional de hornazo salmantino con masa de pan y embutidos.">
 
-<link rel="preload" href="../assets/css/style.css" as="style">
-<link rel="stylesheet" href="../assets/css/style.css">
- <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-  
-<link rel="icon" href="../assets/imagenes/favicon.svg" type="image/svg+xml">
-<link rel="preload" as="image" href="../assets/imagenes/optimizadas/hornazo.webp">
+  <link rel="icon" href="../assets/imagenes/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="../assets/css/style.css" as="style">
+  <link rel="stylesheet" href="../assets/css/style.css">
+
+  <link rel="preload" as="image" href="../assets/imagenes/optimizadas/hornazo.webp">
 </head>
 <body>
 
-  
-    <!-- Header -->
 <header>
   <nav class="menu">
-   
     <ul>
-
-       <li>
-         <a href="../index.html"><img src="../assets/imagenes/optimizadas/favicon.webp" width="32" height="32"  alt="bandera de Salamanca" >Inicio</a></li>
-  
-       <li><a href="../categoria/ProductosTipicos.html">Categoria</a></li>     
+      <li>
+        <a href="../index.html">
+          <img src="../assets/imagenes/optimizadas/favicon.webp" width="32" height="32" alt="bandera de Salamanca">
+          Inicio
+        </a>
+      </li>
+      <li><a href="../categoria/ProductosTipicos.html">Categoria</a></li>
       <li><a href="../categoria2/PlatosTipicos.html">Categoria2</a></li>
-       <li><a href="../BaresyRestaurantes.html"> Bares y Restaurantes</a></li>
-        <li><a href="../det1/index.html">Detalle-Producto-Hornazo</a></li>
-
-    
+      <li><a href="../BaresyRestaurantes.html">Bares y Restaurantes</a></li>
+      <li><a href="../det1/index.html">Detalle-Producto-Hornazo</a></li>
     </ul>
   </nav>
-  </header>
+</header>
 
 <main>
-   <section class="detalle-recetaHornazo-grid">
-      <section class="detalle-recetaHornazo">
-  <h1 class="hornazo">Hornazo</h1>
-  <a href="../categoria/ProductosTipicos.html">Volver a productos</a>
-   
-    <p> Preparación: <time datetime="PT20M">20 min</time> ·
+  <section class="detalle-recetaHornazo-grid">
+    <section class="detalle-recetaHornazo">
+      <h1 class="hornazo">Hornazo</h1>
+      <a href="../categoria/ProductosTipicos.html">Volver a productos</a>
+
+      <p>
+        Preparación: <time datetime="PT20M">20 min</time> ·
         Reposo: <time datetime="PT60M">60 min</time> ·
         Horneado: <time datetime="PT40M">40 min</time> ·
         Total: <time datetime="PT2H">2 h</time>
       </p>
-  <figure>
- <a href="../categoria/ProductosTipicos.html">
 
+      <figure>
+        <a href="../categoria/ProductosTipicos.html">
+          <picture>
+            <source srcset="../assets/imagenes/optimizadas/hornazo-mobile.webp"
+                    media="(max-width: 400px)" type="image/webp">
+            <source srcset="../assets/imagenes/optimizadas/hornazo-tablet.webp"
+                    media="(max-width: 900px)" type="image/webp">
+            <source srcset="../assets/imagenes/optimizadas/hornazo.webp"
+                    media="(min-width: 901px)" type="image/webp">
+            <img src="../assets/imagenes/optimizadas/hornazo.webp"
+                 alt="Hornazo tradicional salmantino con chorizo, jamón y lomo"
+                 class="hornazo-clip"
+                 width="400"
+                 height="240"
+                 fetchpriority="high"
+                 decoding="async">
+          </picture>
+        </a>
+        <figcaption>Hornazo tradicional con masa de pan y embutidos.</figcaption>
+      </figure>
+    </section>
 
-<picture>
-  <!-- móvil -->
-  <source srcset="../assets/imagenes/optimizadas/hornazo-mobile.webp"
-          media="(max-width: 400px)"
-          type="image/webp">
-
-  <!-- tablet -->
-  <source srcset="../assets/imagenes/optimizadas/hornazo-tablet.webp"
-          media="(max-width: 900px)"
-          type="image/webp">
-
-  <!-- desktop -->
-  <source srcset="../assets/imagenes/optimizadas/hornazo.webp"
-          media="(min-width: 901px)"
-          type="image/webp">
-
-  <!-- imagen principal -->
-  <img src="../assets/imagenes/optimizadas/hornazo.webp"
-       alt="Hornazo tradicional salmantino con chorizo, jamón y lomo"
-       class="hornazo-clip"
-       width="400"
-       height="240"
-       fetchpriority="high">
-</picture>
-
-    </a>
-
-    <figcaption>
-      Hornazo tradicional con masa de pan y embutidos.
-    </figcaption>
-  </figure>
-
-</section>
     <section class="ingredientes">
       <h2>Ingredientes</h2>
 
@@ -102,12 +85,12 @@
         <li>150 g de chorizo en rodajas</li>
         <li>150 g de lomo adobado</li>
         <li>150 g de jamón serrano</li>
-        <li>1 huevo batido (para pintar)</li>
+        <li>1 huevo batido para pintar</li>
       </ul>
     </section>
 
     <section class="pasos">
-      <h2 >Elaboración</h2>
+      <h2>Elaboración</h2>
       <ol>
         <li>Disuelve la levadura en el agua tibia. Mezcla harina, sal y pimentón; añade agua con levadura, huevo y aceite. Amasa 10 min y reposa 1 h.</li>
         <li>Divide la masa en dos, estira la base y coloca jamón, lomo y chorizo.</li>
@@ -122,35 +105,52 @@
         <li>Marca ligeramente el chorizo y el lomo para un sabor más intenso.</li>
         <li>Puedes aromatizar la masa con anís en grano o pimentón.</li>
       </ul>
+    </section>
 
-</section>
+    <section class="video">
+      <h2>Vídeo receta de Hornazo</h2>
 
-
-<section class="video">
-  <h2>Vídeo receta de Hornazo</h2>
-
-  <div class="video-wrapper">
-
-<iframe
-  src="https://www.youtube.com/embed/P0skzcNKVv4"
-  loading="lazy"
-  aria-label="Vídeo receta de Hornazo"
-  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-  allowfullscreen>
-</iframe>
-
-  </div>
-</section>
-</section>
+      <div class="video-wrapper">
+        <button class="yt-lite" type="button"
+                aria-label="Reproducir vídeo receta de hornazo"
+                data-video-id="P0skzcNKVv4">
+          <img
+            src="https://i.ytimg.com/vi/P0skzcNKVv4/hqdefault.jpg"
+            alt="Miniatura del vídeo receta de hornazo"
+            loading="lazy"
+            width="560"
+            height="315">
+          <span class="yt-play">▶</span>
+        </button>
+      </div>
+    </section>
+  </section>
 </main>
 
 <footer class="site-footer">
-<div class="footer-inner">
-
-<p>UOC Estrella Franco Blanco</p>
+  <div class="footer-inner">
+    <p>UOC Estrella Franco Blanco</p>
   </div>
 </footer>
+
+<script>
+  document.addEventListener('click', function (e) {
+    const btn = e.target.closest('.yt-lite');
+    if (!btn) return;
+
+    const id = btn.dataset.videoId;
+    const iframe = document.createElement('iframe');
+    iframe.src = 'https://www.youtube-nocookie.com/embed/' + id + '?autoplay=1&rel=0';
+    iframe.title = 'Vídeo receta de Hornazo';
+    iframe.loading = 'lazy';
+    iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture';
+    iframe.allowFullscreen = true;
+    iframe.width = '300';
+    iframe.height = '115';
+
+    btn.replaceWith(iframe);
+  });
+</script>
+
 </body>
 </html>
-
-
