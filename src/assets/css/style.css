@@ -249,7 +249,11 @@ h1 {
 }
 
 .farinato-clip {
-  width: 60%;
+
+  max-width: 300px;
+  width: 100%;
+  height: auto;
+
   clip-path: polygon(
     10% 0%, 90% 0%,
     100% 10%, 100% 90%,
@@ -389,6 +393,8 @@ h1 {
   text-align: center;
   border-top: 1px solid rgba(0,0,0,0.15);
   padding: 1.5rem;
+  
+  margin-top: 3rem;
 }
 
 .footer-inner {
