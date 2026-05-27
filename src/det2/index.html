@@ -10,7 +10,9 @@
 <link rel="stylesheet" href="../assets/css/style.css">
  
 
- <link rel="preload" as="image" href="../assets/imagenes/optimizadas/FarinatoCiudadRodrigo.webp">
+<link rel="preload" as="image" href="../assets/imagenes/optimizadas/FarinatoCiudadRodrigo.webp">
+
+ 
 
 <!--favicon con formato png y svg -->
      
@@ -57,35 +59,38 @@
     <!-- Imagen -->
     <figure>
  <a href="../categoria/ProductosTipicos.html">
+
 <picture>
-      <!-- móvil -->
-      <source srcset="../assets/imagenes/optimizadas/FarinatoCiudadRodrigo-mobile.webp"
-              media="(max-width: 400px)"
-               sizes="100vw"
-              type="image/webp">
 
-      <!-- tablet -->
-      <source srcset="../assets/imagenes/optimizadas/FarinatoCiudadRodrigo-tablet.webp"
-              media="(max-width: 800px)"
-               sizes="100vw"
-              type="image/webp">
+  <!-- móvil -->
+  <source 
+    srcset="../assets/imagenes/optimizadas/FarinatoCiudadRodrigo-mobile.webp"
+    media="(max-width: 400px)"
+    type="image/webp">
 
-      <!-- desktop -->
-      <source srcset="../assets/imagenes/optimizadas/FarinatoCiudadRodrigo.webp"
-              media="(min-width: 901px)"
-               sizes="100vw"
-              type="image/webp">
+  <!-- tablet -->
+  <source 
+    srcset="../assets/imagenes/optimizadas/FarinatoCiudadRodrigo-tablet.webp"
+    media="(max-width: 800px)"
+    type="image/webp">
 
-      <!-- fallback -->
-        
-    <img src="../assets/imagenes/optimizadas/FarinatoCiudadRodrigo.webp"
-     alt="foto de farinato"
-     class="farinato-clip"
-     width="400"
-     height="240"
-     fetchpriority="high">
-        
-    </picture>
+  <!-- desktop -->
+  <source 
+    srcset="../assets/imagenes/optimizadas/FarinatoCiudadRodrigo.webp"
+    media="(min-width: 801px)"
+    type="image/webp">
+
+  <!-- fallback -->
+  <img 
+    src="../assets/imagenes/optimizadas/FarinatoCiudadRodrigo.webp"
+    alt="foto de farinato"
+    class="farinato-clip"
+    width="400"
+    height="240"
+    fetchpriority="high">
+    
+</picture>
+
   </a>
 </figure>
 
@@ -128,10 +133,38 @@
     <section class="imagenes">
       <h2>Galería</h2>
       <div class="galeria">
-    <figure><a href="../categoria/ProductosTipicos.html"><img src="../assets/imagenes/optimizadas/MigasPanFarinato.webp" width="600" height="400"  loading="lazy" alt="Migas de pan y especias" class="farinato-clip"></a></figure>   
-    <figure><a href="../categoria/ProductosTipicos.html"><img src="../assets/imagenes/optimizadas/masaFarinatomezclamanteca.webp" width="600" height="400"  loading="lazy"  alt="Masa de farinato tras mezclar con manteca" class="farinato-clip"></a></figure>
-        <figure>
-          <a href="../categoria/ProductosTipicos.html"><img src="../assets/imagenes/optimizadas/rodajasDeFarinatoalaSarten.webp"  width="600" height="400" loading="lazy" alt="Rodajas de farinato dorándose en la sartén" class="farinato-clip"></a></figure>
+<figure><a href="../categoria/ProductosTipicos.html"><img src="../assets/imagenes/optimizadas/MigasPanFarinato.webp" width="600" height="400"  loading="lazy" alt="Migas de pan y especias" class="farinato-clip"></a></figure>   
+    
+<picture><source srcset="../assets/imagenes/optimizadas/MigasPanFarinato.webp" type="image/webp"> <img src="../assets/imagenes/optimizadas/MigasPanFarinato.webp"
+    width="600"
+    height="400"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt="Migas de pan y especias"
+    class="farinato-clip">
+</picture>
+
+<figure><a href="../categoria/ProductosTipicos.html"><img src="../assets/imagenes/optimizadas/masaFarinatomezclamanteca.webp" width="600" height="400"  loading="lazy"  alt="Masa de farinato tras mezclar con manteca" class="farinato-clip"></a></figure>
+<picture><source srcset="../assets/imagenes/optimizadas/masaFarinatomezclamanteca.webp" type="image/webp"> <img src="../assets/imagenes/optimizadas/masaFarinatomezclamanteca.webp"
+    width="600"
+    height="400"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt="Masa de farinato tras mezclar con manteca"
+    class="farinato-clip">
+</picture>
+  <figure><a href="../categoria/ProductosTipicos.html"><img src="../assets/imagenes/optimizadas/rodajasDeFarinatoalaSarten.webp"  width="600" height="400" loading="lazy" alt="Rodajas de farinato dorándose en la sartén" class="farinato-clip"></a></figure>
+  <picture><source srcset="../assets/imagenes/optimizadas/masaFarinatomezclamanteca.webp" type="image/webp"> <img src="../assets/imagenes/optimizadas/masaFarinatomezclamanteca.webp"
+    width="600"
+    height="400"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt="Rodajas de farinato dorándose en la sartén"
+    class="farinato-clip">
+    </picture>
       </div>
     </section>
 
@@ -143,20 +176,22 @@
     </section>
 
     <!-- Vídeo de YouTube  -->
-   <section class="videoElaboracionFarinato">
-      <h2>Vídeo de elaboración del Farinato</h2>
-      <div class="video-wrapper">
-  <iframe width="560" height="315"
-  src="https://www.youtube.com/embed/QIjxzTBguL0"
-  loading="lazy"
-  aria-label="Elaboración del farinato"
-  frameborder="0"
-  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-  referrerpolicy="strict-origin-when-cross-origin"
-  allowfullscreen>
-</iframe>
+<section class="videoElaboracionFarinato">
+  <h2>Vídeo de elaboración del Farinato</h2>
 
-</div>
+  <div class="video-wrapper">
+    <iframe
+      width="560"
+      height="315"
+      src="https://www.youtube.com/embed/QIjxzTBguL0"
+      loading="lazy"
+      title="Elaboración del farinato"
+      frameborder="0"
+      allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin"
+      allowfullscreen>
+    </iframe>
+  </div>
 </section>
 </article>
 
