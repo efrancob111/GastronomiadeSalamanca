@@ -6,8 +6,6 @@ html, body {
   padding: 0;
 }
 
-
-
 body {
   min-height: 100vh;
   display: flex;
@@ -26,23 +24,35 @@ img, iframe, video, svg {
   display: block;
 }
 
+/* ===== ENLACES ===== */
 a {
   color: inherit;
   text-decoration: none;
+
+  /*  mejora táctil GLOBAL */
+  min-height: 44px;
+  min-width: 44px;
+  display: inline-flex;
+  align-items: center;
 }
 
 a:hover,
 a:focus {
-  text-decoration: none;
+  text-decoration: underline;
 }
 
+/* iconos dentro de enlaces */
+a img {
+  padding: 6px;
+}
+
+/* ===== ACCESSIBILITY ===== */
 :focus-visible {
   outline: 2px solid #FFD700;
   outline-offset: 2px;
 }
 
 /* ===== MENÚ ===== */
-
 header,
 .menu,
 .menu ul {
@@ -59,16 +69,18 @@ header,
   list-style: none;
   background-color: #8B4513;
   min-height: 60px;
-  
 }
 
 .menu a {
   color: #fff;
   font-size: 1rem;
-  padding: 10px 6px;
   display: flex;
   align-items: center;
   gap: 6px;
+
+  /*  táctil */
+  min-height: 48px;
+  padding: 10px 12px;
 }
 
 .menu img {
@@ -76,22 +88,8 @@ header,
   height: 32px;
   border-radius: 6px;
   object-fit: cover;
-}
-
-.menu a:hover,
-.menu a:focus {
-  color: #fff;
-}
-
-.menu img {
-  width: 32px;
-  height: 32px;
-  object-fit: cover;
-  border-radius: 6px;
   background: #0B2545;
   padding: 2px;
-  border: 1px solid rgba(255,255,255,.35);
-  box-shadow: 0 0 0 1px rgba(0,0,0,.18);
 }
 
 /* ===== Títulos ===== */
@@ -112,7 +110,7 @@ h1 {
   padding: 0 16px;
 }
 
-/* ===== Grids generales ===== */
+/* ===== Grids ===== */
 .productos-grid,
 .dulces-grid,
 .platostipicos,
@@ -124,14 +122,6 @@ h1 {
 .productos-grid {
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
-}
-
-.dulces-grid {
-  grid-template-columns: 1fr;
-}
-
-.platostipicos {
-  grid-template-columns: 1fr;
 }
 
 .containerlinks {
@@ -151,15 +141,17 @@ h1 {
   padding: 12px;
 }
 
-/* fondo distinto */
-.detalle-recetaHornazo-grid,
-.recetachanfaina-grid,
-.detalle-patatasmeneas {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 2rem;
+/* CLICABLE */
+.producto a,
+.dulce a,
+.platostipicos a,
+.containerlinks a {
+  display: block;
+  padding: 12px;
+  height: 100%;
 }
 
+/* ===== Imágenes ===== */
 .producto img,
 .dulce img,
 .platostipicos img {
@@ -173,228 +165,26 @@ h1 {
   height: 200px;
 }
 
-.dulce--full img {
-  height: 280px;
-}
-
-/* ===== Hornazo ===== */
-.hornazo {
-  text-align: left;
-}
-
-.hornazo-clip {
-  width: 200px;
-  margin: 1rem 0;
-  clip-path: polygon(
-    10% 0%, 90% 0%,
-    100% 10%, 100% 90%,
-    90% 100%, 10% 100%,
-    0% 90%, 0% 10%
-  );
-  transition: transform 0.3s ease, opacity 0.3s ease, clip-path 0.5s ease-in-out;
-}
-
-.hornazo-clip:hover {
-  transform: scale(1.02);
-}
-
-/* ===== Vídeo ===== */
+/* ===== Video ===== */
 .video-wrapper {
-  position: relative;
-  width: 100%;
   max-width: 560px;
 }
 
-.yt-lite {
-  position: relative;
-  display: block;
-  width: 100%;
-  padding: 0;
-  border: 0;
-  background: #000;
-  cursor: pointer;
-}
-
-.yt-lite img,
 .video-wrapper iframe {
   width: 100%;
-  display: block;
+  border: none;
 }
 
-.yt-play {
-  position: absolute;
-  inset: 50% auto auto 50%;
-  transform: translate(-50%, -50%);
-  font-size: 3rem;
-  color: #fff;
-  text-shadow: 0 2px 8px rgba(0,0,0,.7);
-  pointer-events: none;
-}
-
-/* ===== Clip-paths ===== */
-.imagen-clip,
-.salamanca-clip,
-.plaza-clip,
-.farinato-clip {
-  width: 100%;
-  height: auto;
-  display: block;
-  margin: 2rem auto;
-  transition: transform 0.3s ease;
-}
-
-.imagen-clip,
-.salamanca-clip {
-  clip-path: polygon(
-    4% 0%, 96% 0%,
-    100% 8%, 100% 92%,
-    96% 100%, 4% 100%,
-    0% 92%, 0% 8%
-  );
-}
-
-.plaza-clip {
-  width: 200px;
-  aspect-ratio: 1 / 1;
-  clip-path: circle(50%);
-  object-fit: cover;
-}
-
-.farinato-clip {
-
-  max-width: 300px;
-  width: 100%;
-  height: auto;
-
-  clip-path: polygon(
-    10% 0%, 90% 0%,
-    100% 10%, 100% 90%,
-    90% 100%, 10% 100%,
-    0% 90%, 0% 10%
-  );
-}
-
-.imagen-clip:hover,
-.salamanca-clip:hover,
-.plaza-clip:hover,
-.farinato-clip:hover {
-  transform: scale(1.02);
-}
-
-/* ===== Animaciones ===== */
-.titulo-animado {
-  opacity: 0;
-  transform: translateY(20px);
-  animation: aparecer 1s ease-out 0.3s forwards;
-}
-
-.icono {
-  width: 32px;
-  height: 32px;
-  vertical-align: middle;
-  margin-right: 8px;
-  display: inline-block;
-}
-
-.decorado {
-  display: flex;
-  justify-content: center;
-  margin: 0.5rem 0 1.5rem;
-}
-
-.onda-svg path {
-  fill: none;
-  stroke: #8b0000;
-  stroke-width: 3;
-  stroke-linecap: round;
-  stroke-dasharray: 400;
-  stroke-dashoffset: 400;
-  animation: dibujar-onda 1.6s ease-out forwards;
-}
-
-@keyframes aparecer {
-  from { opacity: 0; transform: translateY(20px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-
-@keyframes dibujar-onda {
-  to { stroke-dashoffset: 0; }
-}
-
-@keyframes aparecer-img {
-  from { opacity: 0; transform: scale(0.96); }
-  to { opacity: 1; transform: scale(1); }
-}
-
-/* ===== Bares y restaurantes ===== */
-.imagenbaresyrestaurantes {
-  background-image: url("../imagenes/optimizadas/ImagenSalamanca.webp");
-  width: 100vw;
-  height: 80vh;
-  margin-inline: calc(50% - 50vw);
-  background-size: cover;
-  background-position: center;
-}
-
-.salamanca-clip {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 2;
-  width: min(80%, 600px);
-}
-
-.barespinchos,
-.restaurantes,
-.cafesYcopas {
-  display: grid;
-  align-items: start;
-  color: #003366;
-  margin-bottom: 40px;
-}
-
+/* ===== Enlaces de listas largas (IMPORTANTE) ===== */
+.EnlacesdeImagenes a,
+.EnlacesRestaurantesBares a,
+.Enlacescafesydocumentacion a,
 .barespinchos a,
 .restaurantes a,
 .cafesYcopas a {
-  color: #0055aa;
-}
-
-.barespinchos a:hover,
-.barespinchos a:focus,
-.restaurantes a:hover,
-.restaurantes a:focus,
-.cafesYcopas a:hover,
-.cafesYcopas a:focus {
-  color: #0055aa;
-}
-
-/* ===== Enlaces y documentación ===== */
-.EnlacesdeImagenes,
-.EnlacesRestaurantesBares,
-.Enlacescafesydocumentacion {
-  text-decoration: none;
-  list-style: none;
-  color: #111;
-}
-
-.EnlacesdeImagenes {
-  text-align: left;
-  padding: 20px;
-}
-
-.containerlinks {
-  color: #111;
-  margin-bottom: 12px;
-}
-
-.containerlinks a {
-  color: rgb(117, 37, 37);
-}
-
-.containerlinks a:hover,
-.containerlinks a:focus {
-  color: red;
+  display: inline-block;
+  padding: 6px 0;
+  line-height: 1.6;
 }
 
 /* ===== Footer ===== */
@@ -403,34 +193,14 @@ h1 {
   background-color: #B85C18;
   color: white;
   text-align: center;
-  border-top: 1px solid rgba(0,0,0,0.15);
   padding: 1.5rem;
-  
   margin-top: 3rem;
-}
-
-.footer-inner {
-  max-width: 1100px;
-  margin: 0 auto;
-  font-size: 1.125rem;
-  font-weight: 600;
 }
 
 /* ===== Responsive ===== */
 @media (max-width: 768px) {
-  .menu ul {
-    gap: 8px;
-  }
-
   .menu a {
     font-size: 0.95rem;
-  }
-
-  .salamanca-clip {
-    position: static;
-    transform: none;
-    width: 100%;
-    max-width: 100%;
   }
 }
 
@@ -439,46 +209,5 @@ h1 {
   .containerlinks,
   .platostipicos {
     grid-template-columns: 1fr;
-  }
-
-  .imagenbaresyrestaurantes {
-    height: 30vh;
-  }
-
-  .imagen-clip,
-  .plaza-clip,
-  .hornazo-clip {
-    animation: aparecer-img 0.8s ease-out;
-  }
-}
-
-@media (min-width: 641px) {
-  .dulces-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (min-width: 768px) {
-  .productos-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .platostipicos {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (min-width: 1025px) {
-  .dulces-grid {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  *, *::before, *::after {
-    animation-duration: 0.01ms ;
-    animation-iteration-count: 1;
-    transition-duration: 0.01ms;
-    scroll-behavior: auto ;
   }
 }
