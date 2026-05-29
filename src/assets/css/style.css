@@ -28,8 +28,6 @@ img, iframe, video, svg {
 a {
   color: inherit;
   text-decoration: none;
-
-  /*  mejora táctil GLOBAL */
   min-height: 44px;
   min-width: 44px;
   display: inline-flex;
@@ -41,7 +39,6 @@ a:focus {
   text-decoration: underline;
 }
 
-/* iconos dentro de enlaces */
 a img {
   padding: 6px;
 }
@@ -77,8 +74,6 @@ header,
   display: flex;
   align-items: center;
   gap: 6px;
-
-  /*  táctil */
   min-height: 48px;
   padding: 10px 12px;
 }
@@ -97,7 +92,9 @@ h1, h2, h3, h4, h5 {
   color: #003366;
   margin-top: 0;
 }
-
+.hornazo{
+  text-align: center;
+}
 h1 {
   text-align: center;
 }
@@ -141,7 +138,7 @@ h1 {
   padding: 12px;
 }
 
-/* CLICABLE */
+/*CLICABLES */
 .producto a,
 .dulce a,
 .platostipicos a,
@@ -151,21 +148,65 @@ h1 {
   height: 100%;
 }
 
-/* ===== Imágenes ===== */
+/* ===== IMÁGENES GENERALES ===== */
 .producto img,
-.dulce img,
-.platostipicos img {
-  width: 100%;
+.dulce img {
+  height: 200px;
   object-fit: cover;
   border-radius: 6px;
 }
 
-.producto img,
-.dulce img {
-  height: 200px;
+
+
+/* Platos típicos */
+.platostipicos img {
+  width: 70%;              /* más pequeña */
+  margin: 0 auto;          /* centrada */
+  display: block;
+  border-radius: 6px;
 }
 
-/* ===== Video ===== */
+/* Detalle receta hornazo (det1) */
+.detalle-recetaHornazo-grid img {
+  width: 60%;              /* más pequeña */
+  max-width: 300px;
+  margin: 0 auto;          /* centrada */
+  display: block;
+  border-radius: 6px;
+}
+/*pagina bares y restaurantes*/
+.titulo-animado {
+  display: flex;
+  align-items: center; /* centra verticalmente */
+  gap: 10px; /* espacio entre icono y texto */
+}
+
+
+
+.imagenSalamanca {
+  width: 100%;
+}
+
+.imagenSalamanca img {
+  width: 100%;
+  height: 500px;      /* más alta aún */
+  object-fit: cover;
+}
+
+
+.icono {
+  width: 28px;
+  height: 28px;
+}
+
+/* opción también para patatas meneas(det5) */
+.detalle-patatasmeneas img {
+  width: 70%;
+  max-width: 350px;
+  margin: 0 auto;
+}
+
+/* ===== VIDEO ===== */
 .video-wrapper {
   max-width: 560px;
 }
@@ -175,7 +216,7 @@ h1 {
   border: none;
 }
 
-/* ===== Enlaces de listas largas (IMPORTANTE) ===== */
+/* ===== ENLACES LARGOS ===== */
 .EnlacesdeImagenes a,
 .EnlacesRestaurantesBares a,
 .Enlacescafesydocumentacion a,
@@ -187,7 +228,7 @@ h1 {
   line-height: 1.6;
 }
 
-/* ===== Footer ===== */
+/* ===== FOOTER ===== */
 .site-footer {
   width: 100%;
   background-color: #B85C18;
