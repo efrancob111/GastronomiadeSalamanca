@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
   <meta charset="utf-8">
-  <title>detalle-recetaChanfaina</title>
+  <title>detalle receta de Chanfaina</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Receta de plato tipico de Salamanca Chanfaina">
 
@@ -10,8 +10,13 @@
 <link rel="stylesheet" href="../assets/css/style.css">
 
 
- <link rel="preload" as="image" href="../assets/imagenes/optimizadas/Chanfaina.webp">
+ <link rel="preload" as="image" href="../assets/imagenes/optimizadas/Chanfaina.webp" width="400" height="240" fetchpriority="high">
+ <!--favicon con formato png y svg -->
 <link rel="icon" href="../assets/imagenes/favicon.svg" type="image/svg+xml">
+<link rel="icon" sizes="16x16" href="../assets/imagenes/favicon-16.png">
+<link rel="icon" sizes="32x32" href="../assets/imagenes/favicon-32.png">
+<link rel="icon" sizes="48x48" href="../assets/imagenes/favicon-48.png">
+
 
 </head>
 <body>
@@ -21,16 +26,18 @@
 <header>
   <nav class="menu">
    
-    <ul>
-
-       <li>
-         <a href="../index.html" title="Volver a la página principal de Gastronomía de Salamanca"><img src="../assets/imagenes/optimizadas/favicon.webp" width="32" height="32"  alt="bandera de salamanca" >Inicio</a>
+  <ul>
+    <li>
+      <a href="../index.html" accesskey="i">
+        <img src="../assets/imagenes/optimizadas/favicon.webp" width="32" height="32" alt="bandera de Salamanca">
+        Inicio
+      </a>
     </li>
-       <li><a href="../categoria/ProductosTipicos.html">Productos típicos de Salamanca</a></li>
-         <li><a href="../det1/index.html">Detalle-Producto-Hornazo</a></li>
-         <li><a href="../det2/index.html">Detalle-Producto-Farinato</a></li>
-      <li><a href="../categoria2/PlatosTipicos.html">Platos típicos de Salamanca</a></li>
-       <li><a href="../BaresyRestaurantes.html">Bares y Restaurantes</a></li>
+       <li><a href="../categoria/ProductosTipicos.html" accesskey="p">Productos típicos de Salamanca</a></li>
+         <li><a href="../det1/index.html" accesskey="h">Detalle-Producto-Hornazo</a></li>
+         <li><a href="../det2/index.html" accesskey="f">Detalle-Producto-Farinato</a></li>
+      <li><a href="../categoria2/PlatosTipicos.html" accesskey="t">Platos típicos de Salamanca</a></li>
+       <li><a href="../BaresyRestaurantes.html" accesskey="b">Bares y Restaurantes</a></li>
 
     
     </ul>
@@ -70,7 +77,7 @@
     
   <img src="../assets/imagenes/optimizadas/Chanfaina.webp" 
      alt="Chanfaina - plato típico de la categoría 2"
-     width="400" height="240" fetchpriority="high">
+     width="400" height="240" fetchpriority="high" decoding="async">
        </picture>
      </a> 
       <figcaption>Chanfaina</figcaption>
@@ -113,12 +120,12 @@
       </section>
        <section class="video">
           <div class="video-wrapper">
-        <!-- Sustituye el ID del vídeo por el que prefieras -->
+
 
           <h5>Vídeo de elaboración de Chanfaina</h5>
  <iframe
   src="https://www.youtube.com/embed/xj2j5W4CnIc"
-  title="Elaboración de chanfaina — vídeo ilustrativo"
+  title="Elaboración de chanfaina — video ilustrativo"
   loading="lazy"
   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
   allowfullscreen>
