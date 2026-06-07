@@ -194,10 +194,12 @@ h1 {
 }
 
 
+
 .icono {
-  width: 28px;
-  height: 28px;
+  width: 32px;
+  height: auto;
 }
+
 
 /* opción también para patatas meneas(det5) */
 .detalle-patatasmeneas img {
