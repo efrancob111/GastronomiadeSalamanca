@@ -168,12 +168,15 @@ h1 {
 
 /* Detalle receta hornazo (det1) */
 .detalle-recetaHornazo-grid img {
-  width: 60%;              /* más pequeña */
   max-width: 300px;
   margin: 0 auto;          /* centrada */
   display: block;
   border-radius: 6px;
+  margin: 0 auto;      /* centra  el contenido */
+  padding: 20px;
 }
+
+
 /*pagina bares y restaurantes*/
 .titulo-animado {
   display: flex;
