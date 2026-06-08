@@ -10,7 +10,10 @@
   <link rel="icon" sizes="16x16" href="../assets/imagenes/favicon-16.png">
 <link rel="icon" sizes="32x32" href="../assets/imagenes/favicon-32.png">
 <link rel="icon" sizes="48x48" href="../assets/imagenes/favicon-48.png">
-  <link rel="preload" href="../assets/css/style.css" as="style">
+  
+<link rel="preload" href="../assets/css/style.css" as="style" onload="this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="../assets/css/style.css"></noscript>
+
   <link rel="stylesheet" href="../assets/css/style.css">
 
   <link rel="preload" as="image" href="../assets/imagenes/optimizadas/hornazo.webp" fetchpriority="high">
@@ -60,9 +63,9 @@
       <figure>
         <a href="../categoria/ProductosTipicos.html">
           <picture>
-            <source srcset="../assets/imagenes/optimizadas/hornazo-mobile.webp"
+            <source srcset="../assets/imagenes/optimizadas/hornazo.webp"
                     media="(max-width: 400px)" type="image/webp">
-            <source srcset="../assets/imagenes/optimizadas/hornazo-tablet.webp"
+            <source srcset="../assets/imagenes/optimizadas/hornazo.webp"
                     media="(max-width: 900px)" type="image/webp">
             <source srcset="../assets/imagenes/optimizadas/hornazo.webp"
                     media="(min-width: 901px)" type="image/webp">
@@ -124,19 +127,21 @@
       <h2>Vídeo receta de Hornazo</h2>
 
       <div class="video-wrapper">
-        <button class="yt-lite" type="button"
-                aria-label="Reproducir vídeo receta de hornazo"
-                data-video-id="P0skzcNKVv4">
 
+<button class="yt-lite"
+        type="button"
+        aria-label="Reproducir vídeo receta de hornazo"
+        data-video-id="P0skzcNKVv4">
 
-<a href="https://www.youtube.com/watch?v=P0skzcNKVv4" target="_blank" aria-label="Ver vídeo receta de hornazo en YouTube">
   <img src="https://i.ytimg.com/vi/P0skzcNKVv4/mqdefault.jpg"
        alt="Miniatura del vídeo receta de hornazo"
        loading="lazy"
        width="320"
        height="180">
+
   <span class="yt-play">▶</span>
-</a>
+</button>
+
 
 
       </div>
