@@ -11,7 +11,7 @@ body {
   display: flex;
   flex-direction: column;
   background: beige;
-  font-family: 'Roboto', Arial, sans-serif;
+    font-family: system-ui, Arial, sans-serif;
 }
 
 main {
@@ -22,6 +22,7 @@ img, iframe, video, svg {
   max-width: 100%;
   height: auto;
   display: block;
+    aspect-ratio: attr(width) / attr(height);
 }
 
 /* ===== ENLACES ===== */
@@ -213,8 +214,12 @@ h1 {
 
 /* ===== VIDEO ===== */
 .video-wrapper {
-  max-width: 560px;
-  text-align: center;
+
+  text-align: center; 
+width: 320px;
+  height: 180px;
+  position: relative;
+
 }
 
 .video-wrapper iframe {
