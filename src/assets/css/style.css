@@ -16,6 +16,7 @@ body {
 
 main {
   flex: 1;
+    min-height: 600px;
 }
 
 img, iframe, video, svg {
@@ -177,6 +178,10 @@ h1 {
   padding: 20px;
 }
 
+section[aria-labelledby="ingredientes"] {
+  min-height: 420px;
+}
+
 
 /*pagina bares y restaurantes*/
 .titulo-animado {
@@ -211,6 +216,12 @@ h1 {
   max-width: 350px;
   margin: 0 auto;
 }
+
+
+.patatasmeneasrevolvonas-clip {
+  aspect-ratio: 320 / 197;
+}
+
 
 /* ===== VIDEO ===== */
 .video-wrapper {
