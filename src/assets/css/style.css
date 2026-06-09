@@ -222,11 +222,15 @@ section[aria-labelledby="ingredientes"] {
   aspect-ratio: 320 / 197;
 }
 
+
+
 .farinato-clip {
   width: 100%;
   max-width: 400px;
-  aspect-ratio: 400 / 240;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
 }
+
 
 
 /* ===== VIDEO ===== */
