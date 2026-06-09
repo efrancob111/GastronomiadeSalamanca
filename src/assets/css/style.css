@@ -216,10 +216,16 @@ section[aria-labelledby="ingredientes"] {
   max-width: 350px;
   margin: 0 auto;
 }
-
+/****Clip***/
 
 .patatasmeneasrevolvonas-clip {
   aspect-ratio: 320 / 197;
+}
+
+.farinato-clip {
+  width: 100%;
+  max-width: 400px;
+  aspect-ratio: 400 / 240;
 }
 
 
