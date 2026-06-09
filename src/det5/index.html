@@ -7,8 +7,12 @@
   <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
   <meta name="description" content="Receta de plato tipico de Salamanca patatas meneás o  revolconas, plato típico de Salamanca con chorizo, pimentón y papas">
 
-<link rel="preload" href="../assets/css/style.css" as="style">
-<link rel="stylesheet" href="../assets/css/style.css">
+<link rel="preload" href="../assets/css/style.css" as="style"
+      onload="this.onload=null;this.rel='stylesheet'">
+<noscript>
+  <link rel="stylesheet" href="../assets/css/style.css">
+</noscript>
+
 
 
   
@@ -145,23 +149,29 @@
         <li>Puedes aromatizar la masa con anís en grano o pimentón.</li>
       </ul>
       </section>
-       
-           <section aria-labelledby="video">
-             <div class="video-wrapper"></div>
-             <!-- Vídeo de YouTube  -->
-               <h4>Vídeo de elaboración de patatas meneas </h4>
-               
-    
-       <iframe width="560" height="315"
-       src="https://www.youtube-nocookie.com/embed/LZFImbeEqSI"
-       title="Vídeo receta de patatas meneas de Salamanca"
-      loading="lazy"
-      allowfullscreen>
-     </iframe> 
-      </section>
-      </section>
-</main>
 
+<section aria-labelledby="video">
+  <h4>Vídeo de elaboración de patatas meneas</h4>
+
+  <div class="video-wrapper">
+    <a href="https://www.youtube.com/watch?v=LZFImbeEqSI"
+       target="_blank"
+       rel="noopener noreferrer"
+       aria-label="Ver vídeo de patatas meneas en YouTube">
+
+      <img src="../assets/imagenes/optimizadas/hqdefault.webp"
+           alt="Vídeo de patatas meneas"
+           width="320"
+           height="180"
+           loading="lazy"
+           decoding="async">
+
+      <span class="yt-play">▶</span>
+    </a>
+  </div>
+</section>
+</section>
+</main>
 
 <footer class="site-footer">
 <div class="footer-inner">
